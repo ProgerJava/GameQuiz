@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorDelete">#FFA500</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF69B4</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#F0018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nameApp">#98C12A</color>
+    <color name="nameButtonAct2">#C12895EC</color>
+    <color name="nameButtonAct2_2">#F05EA7E1</color>
+    <color name="easy">#32CD32</color>
+    <color name="normal">#0047b3</color>
+    <color name="hard">#A52A2A</color>
+    <color name="easy1">#FFEB3B</color>
+    <color name="false_">#DC143C</color>
+    <color name="ButtonNotPass">#d1f179</color>
+    <color name="ButtonNotPassNormal">#1b547f</color>
+    <color name="textLevelsNormal">#209344</color>
+    <color name="ButtonNotPassHard">#742f2f</color>
+</resources>

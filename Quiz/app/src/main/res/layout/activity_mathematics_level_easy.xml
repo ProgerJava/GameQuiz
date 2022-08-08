@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ActivityMathematicsEasy"
+    tools:context=".system.ActivityMathematicsEasy">
+
+    <ImageView
+        android:id="@+id/imageFoneMathematics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:foregroundGravity="center"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fone_levels_easy" />
+
+    <TextView
+        android:id="@+id/imageBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:foregroundGravity="left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/Back"
+        android:textSize="40sp"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:textColor="@color/nameApp"
+        android:textStyle="bold"/>
+
+
+    <ImageButton
+        android:id="@+id/imageRestartEasyMath"
+        android:layout_width="50sp"
+        android:layout_height="55sp"
+        android:layout_margin="10sp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/style_buttons_diagram_restart"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageDiagramEasyMath"
+        app:srcCompat="@android:drawable/ic_menu_rotate"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageDiagramEasyMath"
+        android:layout_width="50sp"
+        android:layout_height="55sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/style_buttons_diagram_restart"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/diagram"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/TextAppName"
+            style="@style/levelEasy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/bowlby_one"
+            android:foregroundGravity="left"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/nameApp"
+            android:textSize="65sp" />
+
+        <ScrollView
+            android:id="@+id/ScrollMath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextAppName"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp">
+
+            <LinearLayout
+                android:id="@+id/LayoutEasy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel1"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_math_easy"
+                            android:gravity="center"
+                            android:text="@string/level1"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel2"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel3"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel4"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel5"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1sp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel6"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel7"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel8"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel9"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel10"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1sp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel11"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel12"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel13"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel14"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel15"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1sp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel16"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel17"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel18"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel19"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/EasyMathlevel20"
+                            android:layout_width="50sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="1sp"
+                            android:layout_marginRight="1sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/style_buttons_not_pass"
+                            android:gravity="center"
+                            android:text="X"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/imageCloudMath2"
+            android:layout_width="400sp"
+            android:layout_height="200sp"
+            android:layout_marginTop="40sp"
+            android:foregroundGravity="center"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cloud2_for_math_act" />
+
+        <ImageView
+            android:id="@+id/imageCloudMath1"
+            android:layout_width="300sp"
+            android:layout_height="200sp"
+            android:layout_below="@+id/imageCloudMath2"
+            android:foregroundGravity="center"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cloud1_for_math_act" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

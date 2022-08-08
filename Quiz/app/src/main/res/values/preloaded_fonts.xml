@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/anton</item>
+        <item>@font/asset</item>
+        <item>@font/black_han_sans</item>
+        <item>@font/bowlby_one</item>
+        <item>@font/bowlby_one_sc</item>
+        <item>@font/caesar_dressing</item>
+        <item>@font/holtwood_one_sc</item>
+        <item>@font/lobster</item>
+        <item>@font/megrim</item>
+        <item>@font/prompt_black</item>
+        <item>@font/rubik_mono_one</item>
+        <item>@font/zcool_xiaowei</item>
+        <item>@font/zilla_slab_highlight</item>
+    </array>
+</resources>

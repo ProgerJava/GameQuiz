@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppNameHard" >
+        <item name="android:paddingLeft">4px</item>
+        <item name="android:paddingBottom">4px</item>
+        <item name="android:textColor">@color/hard</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">10</item>
+        <item name="android:shadowDy">15</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/Bar">
+        <shape>
+            <gradient
+                android:angle="270"
+                android:startColor="@color/nameButtonAct2"
+                android:centerColor="@color/nameButtonAct2_2"
+                android:endColor="@color/teal_700">
+            </gradient>
+            <stroke
+                android:width="1sp"
+                android:color="@color/nameButtonAct2" />
+        </shape>
+    </item>
+    <item android:id="@+id/progressBar">
+        <clip>
+            <shape>
+                <gradient
+                    android:startColor="@color/false_"
+                    android:centerColor="@color/easy1"
+                    android:endColor="@color/easy"
+                    android:useLevel="false">
+                </gradient>
+                <stroke
+                    android:width="1sp"
+                    android:color="@color/nameButtonAct2" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

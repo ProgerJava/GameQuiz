@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.quiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quiz">
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel20"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel19"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel18"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel17"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel16"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel15"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel14"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel13"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel12"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsHard.HardBioLevel1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowBioHardDiagram"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowBioHardRestart"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".system.ActivityBioHard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowBioNormalDiagram"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowBioNormalRestart"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".system.ActivityBioNormal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel20"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel19"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel18"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel17"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel16"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel15"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel14"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel13"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel12"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsNormal.NormalBioLevel1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".system.ActivityBioEasy"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel20"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel19"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel18"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel17"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel16"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel15"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel14"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel13"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel12"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bioLevelsEasy.EasyBioLevel1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowBioEasyDiagram"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowBioEasyRestart"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowBioEnh"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel20"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel19"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel18"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel17"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel16"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel15"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel14"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel13"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel12"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsHard.HardPhLevel1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowPhHardDiagram"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowPhHardRestart"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".system.ActivityPhHard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel20"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel19"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel18"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel17"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel16"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel15"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel14"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel13"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel12"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsNormal.NormalPhLevel1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowPhNormalRestart"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowPhNormalDiagram"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".system.ActivityPhNormal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowPhEnh"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowPhEasyDiagram"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowPhEasyRestart"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".system.ActivityPhEasy"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel20"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel19"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel18"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel17"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel16"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel15"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel14"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel13"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel12"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phLevelsEasy.EasyPhLevel1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowGeoHardDiagram"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowGeoHardRestart"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel20"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel19"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel18"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel17"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel16"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel15"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel14"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel13"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel12"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsHard.HardGeoLevel1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowGeoNormalDiagram"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowGeoNormalRestart"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel20"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel19"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel18"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel17"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel16"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel15"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel14"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel13"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel12"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsNormal.NormalGeoLevel1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowGeoEasyDiagram"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowGeoEasyRestart"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowGeoEnh"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".system.ActivityGeoHard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".system.ActivityGeoNormal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".system.ActivityGeoEasy"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel20"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel19"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel18"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel17"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel16"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel15"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel14"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel13"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel12"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".geoLevelsEasy.EasyGeoLevel1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel20"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel19"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel18"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel17"
+            android:exported="false" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel16"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel15"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel14"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel13"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel12"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsHard.HardMathLevel1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowMathNormalRestart"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel20"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel19"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel18"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel17"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel16"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel15"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel14"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel13"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel12"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsNormal.NormalMathLevel1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.DialogWindowMathEasyRestart"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel20"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel19"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel18"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel17"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel16"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel15"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel14"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel13"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel12"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mathLevelsEasy.EasyMathLevel1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".system.ActivityMathematicsHard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".system.ActivityMathematicsNormal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogwindow.ActivityDialogWindowMathENH"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".system.MyService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".system.ActivityMathematicsEasy"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".system.ActivityMenu"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".system.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

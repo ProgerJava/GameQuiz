@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".system.ActivityBioEasy">
+
+    <ImageView
+        android:id="@+id/imageFonePh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:foregroundGravity="center"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fone_levels_easy" />
+
+    <TextView
+        android:id="@+id/imageBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:foregroundGravity="left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/Back"
+        android:textSize="140sp"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:textColor="@color/nameApp"
+        android:textStyle="bold"/>
+    <ImageButton
+        android:id="@+id/imageRestartEasyBio"
+        android:layout_width="150sp"
+        android:layout_height="155sp"
+        android:layout_margin="10sp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/style_buttons_diagram_restart"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageDiagramEasyBio"
+        app:srcCompat="@android:drawable/ic_menu_rotate"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageDiagramEasyBio"
+        android:layout_width="150sp"
+        android:layout_height="155sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/style_buttons_diagram_restart"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/diagram"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/TextAppName"
+            style="@style/levelEasy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/bowlby_one"
+            android:foregroundGravity="left"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/nameApp"
+            android:textSize="195sp" />
+
+        <ScrollView
+            android:id="@+id/ScrollMath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextAppName"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp">
+
+            <LinearLayout
+                android:id="@+id/LayoutEasy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel1"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_math_easy"
+                        android:gravity="center"
+                        android:text="@string/level1"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel2"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel3"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel4"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel5"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel6"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel7"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel8"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel9"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel10"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel11"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel12"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel13"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel14"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel15"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel16"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel17"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel18"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel19"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EasyBiolevel20"
+                        android:layout_width="50sp"
+                        android:layout_height="165sp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_buttons_not_pass"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/imageCloudBio2"
+            android:layout_width="400sp"
+            android:layout_height="600sp"
+            android:layout_marginTop="40sp"
+            android:foregroundGravity="center"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cloud2_for_math_act" />
+
+        <ImageView
+            android:id="@+id/imageCloudBio1"
+            android:layout_width="900sp"
+            android:layout_height="900sp"
+            android:layout_below="@+id/imageCloudBio2"
+            android:foregroundGravity="center"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cloud1_for_math_act" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

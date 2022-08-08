@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate
+        android:interpolator="@android:interpolator/anticipate_overshoot"
+        android:duration="35000"
+        android:fromXDelta="-700"
+        android:fromYDelta="40"
+        android:toXDelta="700"
+        android:toYDelta="-20"
+        android:repeatCount="infinite"
+        android:startOffset="5000"
+        >
+    </translate>
+</set>

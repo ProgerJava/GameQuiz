@@ -6,8 +6,6 @@ import android.app.Dialog;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -22,9 +20,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-import com.example.quiz.DB.FeedReaderDbHelper;
-import com.example.quiz.DB.MyDataBaseHelper;
 import com.example.quiz.R;
 
 import java.util.ArrayList;
@@ -40,10 +35,6 @@ public class MainActivity extends AppCompatActivity {
     public ImageView imageClipart;
     SharedPreferences saveAAA, dataBasePeople;
     SharedPreferences.Editor baseEditor;
-    SQLiteDatabase db;
-    FeedReaderDbHelper dbHelper;
-    EditText textNamePlayer, textPassword;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,11 +66,6 @@ public class MainActivity extends AppCompatActivity {
         //Запоминаем логин при входе:
         dataBasePeople = getSharedPreferences("Base", MODE_PRIVATE);
         baseEditor = dataBasePeople.edit();
-        //Подгрузка базы данных:
-        dbHelper = new FeedReaderDbHelper(getApplicationContext());
-        db = dbHelper.getReadableDatabase();
-        textNamePlayer = findViewById(R.id.textNamePlayer);
-        textPassword = findViewById(R.id.textPassword);
 
 
         editor.putInt("AAA", 1);
@@ -89,64 +75,25 @@ public class MainActivity extends AppCompatActivity {
 
 
         buttonStart.setOnClickListener(view -> {
-            //Если пользователь не зарегистрирован, отправить его в окно регистрации и только после этого перевести в меню игры:
-            ArrayList<String> listWithName = checkBaseName();
-            ArrayList<String> listWithInfo = checkBaseNameAndPassword();
-            String name = textNamePlayer.getText().toString();
-            String password = textPassword.getText().toString();
             Intent intent = new Intent(this, ActivityMenu.class);
-
-            if (!name.equals("") && !password.equals("")) {
-                if (!listWithName.contains(name)) {
-                    putInfoInBase(name, password);
-                    baseEditor.putString("Base", name + password);
-                    baseEditor.commit();
-                    startActivity(intent);
-                    flag = true;
-                }
-                if (listWithInfo.contains(name+password)) {
-                    baseEditor.putString("Base", name + password);
-                    baseEditor.commit();
-                    startActivity(intent);
-                    flag = true;
-                }
-            }
-            if (listWithInfo.contains(dataBasePeople.getString("Base", null))) {
-                startActivity(intent);
-                flag = true;
-            }
-
-
-
+            startActivity(intent);
+            flag = true;
         });
         imageClipart.setOnClickListener(view -> {
             if (saveAAA.getInt("AAA", 1) == 1) {
                 imageClipart.setImageResource(R.drawable.clipart_false);
                 stopService(new Intent(this, MyService.class));
                 editor.putInt("AAA", 0);
-                editor.commit();
+                editor.apply();
             } else {
                 imageClipart.setImageResource(R.drawable.clipart);
                 startService(new Intent(this, MyService.class));
                 editor.putInt("AAA", 1);
-                editor.commit();
+                editor.apply();
             }
         });
-        imageEarth.setOnClickListener(view -> {
-            baseEditor.clear();
-            baseEditor.commit();
-            textNamePlayer.setVisibility(View.VISIBLE);
-            textPassword.setVisibility(View.VISIBLE);
-        });
-
 
     }
-
-    @Override
-    public void overridePendingTransition(int enterAnim, int exitAnim) {
-        super.overridePendingTransition(enterAnim, exitAnim);
-    }
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -159,14 +106,6 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
             startService(new Intent(this, MyService.class));
-        }
-        //Если пользователь не зарегистрирован, отправить его в окно регистрации и только после этого перевести в меню игры:
-        ArrayList<String> listWithInfo = checkBaseNameAndPassword();
-        if (listWithInfo.contains(dataBasePeople.getString("Base", null))) {
-
-        } else {
-            textNamePlayer.setVisibility(View.VISIBLE);
-            textPassword.setVisibility(View.VISIBLE);
         }
     }
 
@@ -191,38 +130,4 @@ public class MainActivity extends AppCompatActivity {
         }
         backPressedTime = System.currentTimeMillis();
     }
-    public ArrayList<String> checkBaseName () {
-        String[] projection = {MyDataBaseHelper.COLUMN_NAME_FIO};
-        Cursor cursor = db.query(MyDataBaseHelper.TABLE_NAME, projection, null, null, null, null, null, null);
-        ArrayList <String> itemIds = new ArrayList<>();
-        while(cursor.moveToNext()) {
-            String itemName = cursor.getString(cursor.getColumnIndexOrThrow(MyDataBaseHelper.COLUMN_NAME_FIO));
-            itemIds.add(itemName);
-        }
-        cursor.close();
-        return itemIds;
-    }
-    public ArrayList<String> checkBaseNameAndPassword () {
-        String[] projection = {MyDataBaseHelper.COLUMN_NAME_FIO, MyDataBaseHelper.COLUMN_NAME_PASSWORD};
-        Cursor cursor = db.query(MyDataBaseHelper.TABLE_NAME, projection, null, null, null, null, null, null);
-        ArrayList <String> itemIds = new ArrayList<>();
-        while(cursor.moveToNext()) {
-            String itemName = cursor.getString(cursor.getColumnIndexOrThrow(MyDataBaseHelper.COLUMN_NAME_FIO));
-            String itemPass = cursor.getString(cursor.getColumnIndexOrThrow(MyDataBaseHelper.COLUMN_NAME_PASSWORD));
-            itemIds.add(itemName + itemPass);
-        }
-        cursor.close();
-        return itemIds;
-    }
-    public void putInfoInBase (String name, String password) {
-        db = dbHelper.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put(MyDataBaseHelper.COLUMN_NAME_FIO, name);
-        values.put(MyDataBaseHelper.COLUMN_NAME_PASSWORD, password);
-        long newRowId = db.insert(MyDataBaseHelper.TABLE_NAME, null, values);
-    }
-
-
-
-
 }

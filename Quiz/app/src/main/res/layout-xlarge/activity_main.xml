@@ -108,39 +108,7 @@ app:layout_constraintTop_toTopOf="parent">
                 android:adjustViewBounds="true"
                 android:foregroundGravity="center"
                 app:srcCompat="@drawable/picture_cloud" />
-            <EditText
-                android:id="@+id/textNamePlayer"
-                android:layout_width="match_parent"
-                android:layout_height="80sp"
-                android:layout_marginStart="5sp"
-                android:ems="10"
-                android:textStyle="bold"
-                android:fontFamily="@font/rubik_mono_one"
-                android:inputType="textPersonName"
-                android:hint="@string/enterYourName"
-                android:textColorHint="@color/nameApp"
-                style="@style/TextAppName"
-                android:visibility="invisible"
-                android:background="@android:color/transparent"
-                android:textSize="45sp"/>
-
-            <EditText
-                android:id="@+id/textPassword"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="5sp"
-                android:textStyle="bold"
-                android:ems="10"
-                android:visibility="invisible"
-                style="@style/TextAppName"
-                android:fontFamily="@font/rubik_mono_one"
-                android:inputType="textPassword"
-                android:textColorHint="@color/nameApp"
-                android:hint="@string/enterYourPassword"
-                android:layout_below="@id/textNamePlayer"
-                android:background="@android:color/transparent"
-                android:textSize="45sp"/>
-
+        
         </RelativeLayout>
 
     </RelativeLayout>

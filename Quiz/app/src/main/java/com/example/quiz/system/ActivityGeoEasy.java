@@ -1,21 +1,18 @@
 package com.example.quiz.system;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static com.example.quiz.Const.LVL_GEO_EASY;
+
 
 import android.app.Dialog;
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Window;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.quiz.R;
 import com.example.quiz.geoLevelsEasy.EasyGeoLevel1;
@@ -38,51 +35,24 @@ import com.example.quiz.geoLevelsEasy.EasyGeoLevel6;
 import com.example.quiz.geoLevelsEasy.EasyGeoLevel7;
 import com.example.quiz.geoLevelsEasy.EasyGeoLevel8;
 import com.example.quiz.geoLevelsEasy.EasyGeoLevel9;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel1;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel10;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel11;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel12;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel13;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel14;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel15;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel16;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel17;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel18;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel19;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel2;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel20;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel3;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel4;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel5;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel6;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel7;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel8;
-import com.example.quiz.mathLevelsEasy.EasyMathLevel9;
+import com.example.quiz.ui.activity.BaseActivity;
 
-public class ActivityGeoEasy extends AppCompatActivity {
+public class ActivityGeoEasy extends BaseActivity {
 
     private ImageView imageCloudGeo1, imageCloudGeo2;
     private TextView imageBack;
-    private long backPressedTime;
-    private Toast backToast;
     private TextView easyGeolevel1, easyGeolevel2, easyGeolevel3, easyGeolevel4, easyGeolevel5, easyGeolevel6, easyGeolevel7, easyGeolevel8, easyGeolevel9, easyGeolevel10, easyGeolevel11, easyGeolevel12, easyGeolevel13, easyGeolevel14, easyGeolevel15, easyGeolevel16, easyGeolevel17, easyGeolevel18, easyGeolevel19, easyGeolevel20;
     private Animation animationCloudGeo1, animationCloudGeo2;
     private ImageButton imageRestartEasyGeo, imageDiagramEasyGeo;
     private Dialog dialogGeoEasyRestart, dialogGeoEasyDiagram;
     private TextView GeolevelEasyRestartYes, GeolevelEasyRestartNo;
     private TextView decided, errors;
-    private boolean flag;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geo_level_easy);
         //Сохрание игры:
-        SharedPreferences save = getSharedPreferences("GeoSave", MODE_PRIVATE);
-        final int level = save.getInt("GeoLevel", 1);
-        //Установка нулевой анимации:
-        overridePendingTransition(0, 0);
-        Window window = getWindow();
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        final int level = getSp().getInt(LVL_GEO_EASY, 1);
         //Диалоговое окно при нажатии на кнопку "restart":
         dialogGeoEasyRestart = new Dialog(this);
         dialogGeoEasyRestart.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -132,192 +102,89 @@ public class ActivityGeoEasy extends AppCompatActivity {
         //Анимация облаков:
         animationCloudGeo1 = AnimationUtils.loadAnimation(this, R.anim.anim_cloud_math1);
         animationCloudGeo2 = AnimationUtils.loadAnimation(this, R.anim.anim_cloud_math2);
-        flag = false;
         //Переход на предыдущую страницу:
         imageBack.setOnClickListener(view -> {
-            Intent intent = new Intent(this, ActivityMenu.class);
-            startActivity(intent);
-            flag = true;
+            startLevel(ActivityMenu.class);
         });
         //Переход к уровню 1:
         easyGeolevel1.setOnClickListener(view -> {
-            if (level >= 1) {
-                Intent intent = new Intent(this, EasyGeoLevel1.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 1) startLevel(EasyGeoLevel1.class);
         });
         //Переход к уровню 2:
         easyGeolevel2.setOnClickListener(view -> {
-            if (level >= 2) {
-                Intent intent = new Intent(this, EasyGeoLevel2.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 2) startLevel(EasyGeoLevel2.class);
         });
         //Переход к уровню 3:
         easyGeolevel3.setOnClickListener(view -> {
-            if (level >= 3) {
-                Intent intent = new Intent(this, EasyGeoLevel3.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 3) startLevel(EasyGeoLevel3.class);
         });
         //Переход к уровню 4:
         easyGeolevel4.setOnClickListener(view -> {
-            if (level >= 4) {
-                Intent intent = new Intent(this, EasyGeoLevel4.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 4) startLevel(EasyGeoLevel4.class);
         });
         //Переход к уровню 5:
         easyGeolevel5.setOnClickListener(view -> {
-            if (level >= 5) {
-                Intent intent = new Intent(this, EasyGeoLevel5.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 5) startLevel(EasyGeoLevel5.class);
         });
         //Переход к уровню 6:
         easyGeolevel6.setOnClickListener(view -> {
-            if (level >= 6) {
-                Intent intent = new Intent(this, EasyGeoLevel6.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 6) startLevel(EasyGeoLevel6.class);
         });
         //Переход к уровню 7:
         easyGeolevel7.setOnClickListener(view -> {
-            if (level >= 7) {
-                Intent intent = new Intent(this, EasyGeoLevel7.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 7) startLevel(EasyGeoLevel7.class);
         });
         //Переход к уровню 8:
         easyGeolevel8.setOnClickListener(view -> {
-            if (level >= 8) {
-                Intent intent = new Intent(this, EasyGeoLevel8.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 8) startLevel(EasyGeoLevel8.class);
         });
         //Переход к уровню 9:
         easyGeolevel9.setOnClickListener(view -> {
-            if (level >= 9) {
-                Intent intent = new Intent(this, EasyGeoLevel9.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 9) startLevel(EasyGeoLevel9.class);
         });//Переход к уровню 10:
         easyGeolevel10.setOnClickListener(view -> {
-            if (level >= 10) {
-                Intent intent = new Intent(this, EasyGeoLevel10.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 10) startLevel(EasyGeoLevel10.class);
         });
         //Переход к уровню 11:
         easyGeolevel11.setOnClickListener(view -> {
-            if (level >= 11) {
-                Intent intent = new Intent(this, EasyGeoLevel11.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 11) startLevel(EasyGeoLevel11.class);
         });
         //Переход к уровню 12:
         easyGeolevel12.setOnClickListener(view -> {
-            if (level >= 12) {
-                Intent intent = new Intent(this, EasyGeoLevel12.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 12) startLevel(EasyGeoLevel12.class);
         });
         //Переход к уровню 13:
         easyGeolevel13.setOnClickListener(view -> {
-            if (level >= 13) {
-                Intent intent = new Intent(this, EasyGeoLevel13.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 13) startLevel(EasyGeoLevel13.class);
         });
         //Переход к уровню 14:
         easyGeolevel14.setOnClickListener(view -> {
-            if (level >= 14) {
-                Intent intent = new Intent(this, EasyGeoLevel14.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 14) startLevel(EasyGeoLevel14.class);
         });
         //Переход к уровню 15:
         easyGeolevel15.setOnClickListener(view -> {
-            if (level >= 15) {
-                Intent intent = new Intent(this, EasyGeoLevel15.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 15) startLevel(EasyGeoLevel15.class);
         });
         //Переход к уровню 16:
         easyGeolevel16.setOnClickListener(view -> {
-            if (level >= 16) {
-                Intent intent = new Intent(this, EasyGeoLevel16.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 16) startLevel(EasyGeoLevel16.class);
         });
         //Переход к уровню 17:
         easyGeolevel17.setOnClickListener(view -> {
-            if (level >= 17) {
-                Intent intent = new Intent(this, EasyGeoLevel17.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 17) startLevel(EasyGeoLevel17.class);
         });
         //Переход к уровню 18:
         easyGeolevel18.setOnClickListener(view -> {
-            if (level >= 18) {
-                Intent intent = new Intent(this, EasyGeoLevel18.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 18) startLevel(EasyGeoLevel18.class);
         });//Переход к уровню 19:
         easyGeolevel19.setOnClickListener(view -> {
-            if (level >= 19) {
-                Intent intent = new Intent(this, EasyGeoLevel19.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 19) startLevel(EasyGeoLevel19.class);
         });
         //Переход к уровню 20:
         easyGeolevel20.setOnClickListener(view -> {
-            if (level >= 20) {
-                Intent intent = new Intent(this, EasyGeoLevel20.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 20) startLevel(EasyGeoLevel20.class);
         });
-        final int [] numberOfLevel = {
+        final Integer [] numberOfLevel = {
                 R.id.EasyGeolevel1,
                 R.id.EasyGeolevel2,
                 R.id.EasyGeolevel3,
@@ -339,30 +206,20 @@ public class ActivityGeoEasy extends AppCompatActivity {
                 R.id.EasyGeolevel19,
                 R.id.EasyGeolevel20,
         };
-        for (int i = 0; i < level; i++) {
-            TextView textView = findViewById(numberOfLevel[i]);
-            textView.setBackground(getDrawable(R.drawable.style_buttons_math_easy));
-            textView.setText(""+(i+1));
-        }
+
+        setLevelsGrid(LVL_GEO_EASY, numberOfLevel, R.drawable.style_buttons_easy);
+
         imageRestartEasyGeo.setOnClickListener(view -> {
             dialogGeoEasyRestart.show();
         });
+
         GeolevelEasyRestartYes.setOnClickListener(view -> {
-            Intent intent = new Intent(this, ActivityGeoEasy.class);
             if (level > 1) {
-                SharedPreferences.Editor editor = save.edit();
-                editor.putInt("GeoLevel", 1);
-                editor.putInt("GeoLevelFalse", 0);
-                editor.commit();
-                for (int i = 1; i < level; i++) {
-                    TextView textView = findViewById(numberOfLevel[i]);
-                    textView.setBackground(getDrawable(R.drawable.style_buttons_not_pass));
-                    textView.setText("X");
-                }
-                dialogGeoEasyRestart.dismiss();
-                flag = true;
-                startActivity(intent);
+                resetLevels(LVL_GEO_EASY, numberOfLevel, R.drawable.style_buttons_not_pass);
+                startLevel(ActivityGeoEasy.class);
             }
+            dialogGeoEasyRestart.dismiss();
+
         });
         GeolevelEasyRestartNo.setOnClickListener(view -> {
             dialogGeoEasyRestart.dismiss();
@@ -374,48 +231,14 @@ public class ActivityGeoEasy extends AppCompatActivity {
             } else  {
                 decided.setText(String.valueOf(level-1));
             }
-            errors.setText(String.valueOf(save.getInt("GeoLevelFalse", 0)));
+            errors.setText(getAllErrorForLevel(LVL_GEO_EASY));
         });
 
     }
-
-    @Override
-    public void overridePendingTransition(int enterAnim, int exitAnim) {
-        super.overridePendingTransition(enterAnim, exitAnim);
-    }
-
     @Override
     protected void onResume() {
         super.onResume();
         imageCloudGeo1.startAnimation(animationCloudGeo1);
         imageCloudGeo2.startAnimation(animationCloudGeo2);
-        ///////////////////////////////////////////
-        //работа с музыкой
-        SharedPreferences saveAAA = getSharedPreferences("AAA", MODE_PRIVATE);
-        if (saveAAA.getInt("AAA", 1) == 0) {
-        } else {
-            startService(new Intent(this, MyService.class));
-        }
-        ///////////////////////////////////////////
-    }
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (flag == false) {
-            stopService(new Intent(this, MyService.class));
-        }
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (backPressedTime + 2000 > System.currentTimeMillis()) {
-            backToast.cancel();
-            super.onBackPressed();
-            return;
-        } else {
-            backToast = Toast.makeText(getBaseContext(), "Нажмите еще раз, чтобы выйти", Toast.LENGTH_SHORT);
-            backToast.show();
-        }
-        backPressedTime = System.currentTimeMillis();
     }
 }

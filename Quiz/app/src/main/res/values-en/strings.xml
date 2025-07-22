@@ -1,0 +1,1417 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="applicationName">Quiz</string>
+    <string name="buttonStart">Play</string>
+    <string name="buttonRegistration">Registration</string>
+    <string name="enterYourName">Name</string>
+    <string name="enterYourPassword">Password</string>
+    <string name="enterCorrectForm">This username is already occupied</string>
+    <string name="buttonMathematics">Mathematics</string>
+    <string name="buttonGeography">Geography</string>
+    <string name="buttonPhysics">Physics</string>
+    <string name="buttonBiology">Biology</string>
+    <string name="restart">Are you sure you want to replay the levels?</string>
+    <string name="diagram">Statistic</string>
+    <string name="totalLevels">Levels:</string>
+    <string name="decided">Solved:</string>
+    <string name="errors">Mistakes:</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="timeOut">Timeout</string>
+    <string name="hurryUp">Hurry up</string>
+    <string name="level1">1</string>
+    <string name="level2">2</string>
+    <string name="level3">3</string>
+    <string name="level4">4</string>
+    <string name="level5">5</string>
+    <string name="level6">6</string>
+    <string name="level7">7</string>
+    <string name="level8">8</string>
+    <string name="level9">9</string>
+    <string name="level10">10</string>
+    <string name="level11">11</string>
+    <string name="level12">12</string>
+    <string name="level13">13</string>
+    <string name="level14">14</string>
+    <string name="level15">15</string>
+    <string name="level16">16</string>
+    <string name="level17">17</string>
+    <string name="level18">18</string>
+    <string name="level19">19</string>
+    <string name="level20">20</string>
+    <string name="Easy">Easy</string>
+    <string name="Normal">Medium</string>
+    <string name="Hard">Hard</string>
+    <string name="Back">❮</string>
+    //Массив подсказок для монитора при правильных ответах:
+    <string name="MonTrue1">Super!</string>
+    <string name="MonTrue2">Keep it up!</string>
+    <string name="MonTrue3">You\'re doing great.!</string>
+    <string name="MonTrue4">Nothing can stop you!</string>
+    <string name="MonTrue5">Great!</string>
+    <string name="MonTrue6">Correct</string>
+    <!-- Hint array for incorrect answers: -->
+    <string name="MonFalse1">Think again...</string>
+    <string name="MonFalse2">You can do it!</string>
+    <string name="MonFalse3">Don’t give up!</string>
+    <string name="MonFalse4">Very close!</string>
+    <string name="MonFalse5">You’re on the right track</string>
+    <string name="MonFalse6">Try harder</string>
+
+    <!-- Easy Math Level Questions: -->
+    <string name="activityEasyMathLevelWork1">What is\na quarter\nof an hour?</string>
+    <string name="activityEasyMathLevelAns1">10 minutes</string>
+    <string name="activityEasyMathLevelAns2">15 minutes</string>
+    <string name="activityEasyMathLevelAns3">25 minutes</string>
+    <string name="activityEasyMathLevelAns4">30 minutes</string>
+    <string name="textMathEasyNumLvl1">Level 1</string>
+
+    <string name="activityEasyMathLevelWork2">Which tool\nis used to\nmeasure angles?</string>
+    <string name="activityEasyMathLevel2Ans1">Protractor</string>
+    <string name="activityEasyMathLevel2Ans2">Set square</string>
+    <string name="activityEasyMathLevel2Ans3">Compass</string>
+    <string name="activityEasyMathLevel2Ans4">Ruler</string>
+    <string name="textMathEasyNumLvl2">Level 2</string>
+
+    <string name="activityEasyMathLevelWork3">Calculate:\n4+4*4+4=?</string>
+    <string name="activityEasyMathLevel3Ans1">24</string>
+    <string name="activityEasyMathLevel3Ans2">34</string>
+    <string name="activityEasyMathLevel3Ans3">16</string>
+    <string name="activityEasyMathLevel3Ans4">64</string>
+    <string name="textMathEasyNumLvl3">Level 3</string>
+
+    <string name="activityEasyMathLevelWork4">How many\nseconds are\nin two days?</string>
+    <string name="activityEasyMathLevel4Ans1">172800</string>
+    <string name="activityEasyMathLevel4Ans2">86400</string>
+    <string name="activityEasyMathLevel4Ans3">43200</string>
+    <string name="activityEasyMathLevel4Ans4">21600</string>
+    <string name="textMathEasyNumLvl4">Level 4</string>
+
+    <string name="activityEasyMathLevelWork5">How many\nmonths in a\nyear have\n28 days?</string>
+    <string name="activityEasyMathLevel5Ans1">2</string>
+    <string name="activityEasyMathLevel5Ans2">4</string>
+    <string name="activityEasyMathLevel5Ans3">7</string>
+    <string name="activityEasyMathLevel5Ans4">12</string>
+    <string name="textMathEasyNumLvl5">Level 5</string>
+
+    <string name="activityEasyMathLevelWork6">Which of\nthese numbers\nare prime?</string>
+    <string name="activityEasyMathLevel6Ans1">2, 3, 5, 7</string>
+    <string name="activityEasyMathLevel6Ans2">2, 4, 6, 8</string>
+    <string name="activityEasyMathLevel6Ans3">1, 3, 5, 9</string>
+    <string name="activityEasyMathLevel6Ans4">0, 4, 6, 10</string>
+    <string name="textMathEasyNumLvl6">Level 6</string>
+
+    <string name="activityEasyMathLevelWork7">Is the number\n-6 an integer?</string>
+    <string name="activityEasyMathLevel7Ans1">True</string>
+    <string name="activityEasyMathLevel7Ans2">False</string>
+    <string name="textMathEasyNumLvl7">Level 7</string>
+
+    <string name="activityEasyMathLevelWork8">What is\n10 to the\npower of 0?</string>
+    <string name="activityEasyMathLevel8Ans1">-1</string>
+    <string name="activityEasyMathLevel8Ans2">1</string>
+    <string name="activityEasyMathLevel8Ans3">10</string>
+    <string name="activityEasyMathLevel8Ans4">0</string>
+    <string name="textMathEasyNumLvl8">Level 8</string>
+
+    <string name="activityEasyMathLevelWork9">9*7=?</string>
+    <string name="activityEasyMathLevel9Ans1">-54</string>
+    <string name="activityEasyMathLevel9Ans2">56</string>
+    <string name="activityEasyMathLevel9Ans3">42</string>
+    <string name="activityEasyMathLevel9Ans4">63</string>
+    <string name="textMathEasyNumLvl9">Level 9</string>
+
+    <string name="activityEasyMathLevelWork10">If you subtract\n28 from 100,\nthe result\nis 8 times\ngreater than\nthe number…</string>
+    <string name="activityEasyMathLevel10Ans1">6</string>
+    <string name="activityEasyMathLevel10Ans2">8</string>
+    <string name="activityEasyMathLevel10Ans3">9</string>
+    <string name="activityEasyMathLevel10Ans4">7</string>
+    <string name="textMathEasyNumLvl10">Level 10</string>
+
+    <string name="activityEasyMathLevelWork11">Find the pattern:\n22, 19, 17, 14, 12, 9…</string>
+    <string name="activityEasyMathLevel11Ans1">7, 4</string>
+    <string name="activityEasyMathLevel11Ans2">6, 4</string>
+    <string name="activityEasyMathLevel11Ans3">6, 3</string>
+    <string name="activityEasyMathLevel11Ans4">7, 5</string>
+    <string name="textMathEasyNumLvl11">Level 11</string>
+
+    <string name="activityEasyMathLevelWork12">60 sheets of a\nbook are 1 cm\nthick. What is\nthe thickness\nof a book with\n240 pages?</string>
+    <string name="activityEasyMathLevel12Ans1">5 cm</string>
+    <string name="activityEasyMathLevel12Ans2">3 cm</string>
+    <string name="activityEasyMathLevel12Ans3">4 cm</string>
+    <string name="activityEasyMathLevel12Ans4">2 cm</string>
+    <string name="textMathEasyNumLvl12">Level 12</string>
+
+    <string name="activityEasyMathLevelWork13">Which integer\nis divisible\nby any natural\nnumber without\na remainder?</string>
+    <string name="activityEasyMathLevel13Ans1">2</string>
+    <string name="activityEasyMathLevel13Ans2">-1</string>
+    <string name="activityEasyMathLevel13Ans3">0</string>
+    <string name="activityEasyMathLevel13Ans4">1</string>
+    <string name="textMathEasyNumLvl13">Level 13</string>
+
+    <string name="activityEasyMathLevelWork14">Find the value\nof x:\nx–12–10+14=80</string>
+    <string name="activityEasyMathLevel14Ans1">88</string>
+    <string name="activityEasyMathLevel14Ans2">92</string>
+    <string name="activityEasyMathLevel14Ans3">86</string>
+    <string name="activityEasyMathLevel14Ans4">84</string>
+    <string name="textMathEasyNumLvl14">Level 14</string>
+
+    <string name="activityEasyMathLevelWork15">How many sides\ndoes a nonagon\nhave?</string>
+    <string name="activityEasyMathLevel15Ans1">9</string>
+    <string name="activityEasyMathLevel15Ans2">8</string>
+    <string name="activityEasyMathLevel15Ans3">10</string>
+    <string name="activityEasyMathLevel15Ans4">11</string>
+    <string name="textMathEasyNumLvl15">Level 15</string>
+
+    <string name="activityEasyMathLevelWork16">What is the\nresult of\nsubtraction\ncalled?</string>
+    <string name="activityEasyMathLevel16Ans1">Subtrahend</string>
+    <string name="activityEasyMathLevel16Ans2">Difference</string>
+    <string name="activityEasyMathLevel16Ans3">Decrease</string>
+    <string name="activityEasyMathLevel16Ans4">Reduction</string>
+    <string name="textMathEasyNumLvl16">Level 16</string>
+
+    <string name="activityEasyMathLevelWork17">Can a triangle\nhave two\nright angles?</string>
+    <string name="activityEasyMathLevel17Ans1">True</string>
+    <string name="activityEasyMathLevel17Ans2">False</string>
+    <string name="textMathEasyNumLvl17">Level 17</string>
+
+    <string name="activityEasyMathLevelWork18">How many roots\ndoes the equation\nx*0=0 have?</string>
+    <string name="activityEasyMathLevel18Ans1">Zero</string>
+    <string name="activityEasyMathLevel18Ans2">One</string>
+    <string name="activityEasyMathLevel18Ans3">Infinitely many</string>
+    <string name="activityEasyMathLevel18Ans4">Infinitely few</string>
+    <string name="textMathEasyNumLvl18">Level 18</string>
+
+    <string name="activityEasyMathLevelWork19">A square has\nan area of\n64 cm². What\nis its perimeter?</string>
+    <string name="activityEasyMathLevel19Ans1">40</string>
+    <string name="activityEasyMathLevel19Ans2">16</string>
+    <string name="activityEasyMathLevel19Ans3">32</string>
+    <string name="activityEasyMathLevel19Ans4">36</string>
+    <string name="textMathEasyNumLvl19">Level 19</string>
+
+    <string name="activityEasyMathLevelWork20">The unit of\nmeasure for\ngemstone mass\nis…</string>
+    <string name="activityEasyMathLevel20Ans1">carat</string>
+    <string name="activityEasyMathLevel20Ans2">centner</string>
+    <string name="activityEasyMathLevel20Ans3">gram</string>
+    <string name="activityEasyMathLevel20Ans4">assay</string>
+    <string name="textMathEasyNumLvl20">Level 20</string>
+
+    <!-- Normal Math Level Questions: -->
+    <string name="activityNormalMathLevelWork1">What is the\nfirst coordinate\nof a point called?</string>
+    <string name="activityNormalMathLevel1Ans1">Abscissa</string>
+    <string name="activityNormalMathLevel1Ans2">Ordinate</string>
+    <string name="activityNormalMathLevel1Ans3">None are correct</string>
+    <string name="activityNormalMathLevel1Ans4">Y</string>
+
+    <string name="activityNormalMathLevelWork2">What is the\nsum of the\nangles in a\ntriangle?</string>
+    <string name="activityNormalMathLevel2Ans1">360°</string>
+    <string name="activityNormalMathLevel2Ans2">180°</string>
+    <string name="activityNormalMathLevel2Ans3">270°</string>
+    <string name="activityNormalMathLevel2Ans4">Varies</string>
+
+    <string name="activityNormalMathLevelWork3">Find the\nmissing number:\n5,9,17,33…129</string>
+    <string name="activityNormalMathLevel3Ans1">65</string>
+    <string name="activityNormalMathLevel3Ans2">84</string>
+    <string name="activityNormalMathLevel3Ans3">66</string>
+    <string name="activityNormalMathLevel3Ans4">69</string>
+
+    <string name="activityNormalMathLevelWork4">Which science\nstudies the\nproperties of\nplane figures?</string>
+    <string name="activityNormalMathLevel4Ans1">Statistics</string>
+    <string name="activityNormalMathLevel4Ans2">Algebra</string>
+    <string name="activityNormalMathLevel4Ans3">Geometry</string>
+    <string name="activityNormalMathLevel4Ans4">Planimetry</string>
+
+    <string name="activityNormalMathLevelWork5">A figure formed\nby two rays\nwith a common\norigin is called…?</string>
+    <string name="activityNormalMathLevel5Ans1">Cone</string>
+    <string name="activityNormalMathLevel5Ans2">Pyramid</string>
+    <string name="activityNormalMathLevel5Ans3">Leg</string>
+    <string name="activityNormalMathLevel5Ans4">Angle</string>
+
+    <string name="activityNormalMathLevelWork6">Mutually perpendicular\nsegments in\na rhombus are called…?</string>
+    <string name="activityNormalMathLevel6Ans1">Diagonals</string>
+    <string name="activityNormalMathLevel6Ans2">Rays</string>
+    <string name="activityNormalMathLevel6Ans3">Legs</string>
+    <string name="activityNormalMathLevel6Ans4">Medians</string>
+
+    <string name="activityNormalMathLevelWork7">Square root\nof 169?</string>
+    <string name="activityNormalMathLevel7Ans1">12</string>
+    <string name="activityNormalMathLevel7Ans2">11</string>
+    <string name="activityNormalMathLevel7Ans3">13</string>
+    <string name="activityNormalMathLevel7Ans4">15</string>
+
+    <string name="activityNormalMathLevelWork8">Base=20cm,\nheight=10cm.\nFind the area\nof the triangle.</string>
+    <string name="activityNormalMathLevel8Ans1">200cm²</string>
+    <string name="activityNormalMathLevel8Ans2">60cm²</string>
+    <string name="activityNormalMathLevel8Ans3">100cm²</string>
+    <string name="activityNormalMathLevel8Ans4">150cm²</string>
+
+    <string name="activityNormalMathLevelWork9">The set of points\nin an angle that\nare equidistant\nfrom its sides\nis called…?</string>
+    <string name="activityNormalMathLevel9Ans1">Chord</string>
+    <string name="activityNormalMathLevel9Ans2">Bisector</string>
+    <string name="activityNormalMathLevel9Ans3">Altitude</string>
+    <string name="activityNormalMathLevel9Ans4">Median</string>
+
+    <string name="activityNormalMathLevelWork10">Pythagorean theorem\nstates that…</string>
+    <string name="activityNormalMathLevel10Ans1">a²+b²=c²</string>
+    <string name="activityNormalMathLevel10Ans2">b²-4ac</string>
+    <string name="activityNormalMathLevel10Ans3">a+b=c²</string>
+    <string name="activityNormalMathLevel10Ans4">P(x)=(x-a)Q(x)</string>
+
+    <string name="activityNormalMathLevelWork11">A line that\nhas two common\npoints with\na circle is called…?</string>
+    <string name="activityNormalMathLevel11Ans1">Cutting</string>
+    <string name="activityNormalMathLevel11Ans2">Tangent</string>
+    <string name="activityNormalMathLevel11Ans3">Bearing</string>
+    <string name="activityNormalMathLevel11Ans4">Secant</string>
+
+    <string name="activityNormalMathLevelWork12">By what number\nshould 2 be\ndivided to get 4?</string>
+    <string name="activityNormalMathLevel12Ans1">8</string>
+    <string name="activityNormalMathLevel12Ans2">0.5</string>
+    <string name="activityNormalMathLevel12Ans3">2</string>
+    <string name="activityNormalMathLevel12Ans4">0.05</string>
+
+    <string name="activityNormalMathLevelWork13">Who participated\nin a fistfight\nat the Olympics\nin 548 BC?</string>
+    <string name="activityNormalMathLevel13Ans1">Euclid</string>
+    <string name="activityNormalMathLevel13Ans2">Vieta</string>
+    <string name="activityNormalMathLevel13Ans3">Pythagoras</string>
+    <string name="activityNormalMathLevel13Ans4">Euler</string>
+
+    <string name="activityNormalMathLevelWork14">How many faces\ndoes an Egyptian\npyramid have?</string>
+    <string name="activityNormalMathLevel14Ans1">10</string>
+    <string name="activityNormalMathLevel14Ans2">5</string>
+    <string name="activityNormalMathLevel14Ans3">3</string>
+    <string name="activityNormalMathLevel14Ans4">4</string>
+
+    <string name="activityNormalMathLevelWork15">Remove the odd\none out:</string>
+    <string name="activityNormalMathLevel15Ans1">Rhombus</string>
+    <string name="activityNormalMathLevel15Ans2">Square</string>
+    <string name="activityNormalMathLevel15Ans3">Rectangle</string>
+    <string name="activityNormalMathLevel15Ans4">Trapezoid</string>
+
+    <string name="activityNormalMathLevelWork16">The point where\nmedians intersect\nin a triangle\nis called…?</string>
+    <string name="activityNormalMathLevel16Ans1">Centroid</string>
+    <string name="activityNormalMathLevel16Ans2">Center</string>
+    <string name="activityNormalMathLevel16Ans3">Centaur</string>
+    <string name="activityNormalMathLevel16Ans4">Vertex</string>
+
+    <string name="activityNormalMathLevelWork17">A statement\naccepted without\nproof is called…?</string>
+    <string name="activityNormalMathLevel17Ans1">Hypothesis</string>
+    <string name="activityNormalMathLevel17Ans2">Axiom</string>
+    <string name="activityNormalMathLevel17Ans3">Pact</string>
+    <string name="activityNormalMathLevel17Ans4">Dogma</string>
+
+    <string name="activityNormalMathLevelWork18">What is the\ncircumference\nof a circle\nwith radius 10?</string>
+    <string name="activityNormalMathLevel18Ans1">20π</string>
+    <string name="activityNormalMathLevel18Ans2">30π</string>
+    <string name="activityNormalMathLevel18Ans3">40π</string>
+    <string name="activityNormalMathLevel18Ans4">15π</string>
+
+    <string name="activityNormalMathLevelWork19">What number\nis 1/7 of 168?</string>
+    <string name="activityNormalMathLevel19Ans1">24</string>
+    <string name="activityNormalMathLevel19Ans2">26</string>
+    <string name="activityNormalMathLevel19Ans3">24.5</string>
+    <string name="activityNormalMathLevel19Ans4">32</string>
+
+    <string name="activityNormalMathLevelWork20">How many kg\nare in 1 pood?</string>
+    <string name="activityNormalMathLevel20Ans1">2.4</string>
+    <string name="activityNormalMathLevel20Ans2">16</string>
+    <string name="activityNormalMathLevel20Ans3">1.8</string>
+    <string name="activityNormalMathLevel20Ans4">32</string>
+
+    <!-- Hard Math Level Questions: -->
+    <string name="activityHardMathLevelWork1">60537+22948=?</string>
+    <string name="activityHardMathLevel1Ans1">83575</string>
+    <string name="activityHardMathLevel1Ans2">82475</string>
+    <string name="activityHardMathLevel1Ans3">83485</string>
+    <string name="activityHardMathLevel1Ans4">82585</string>
+
+    <string name="activityHardMathLevelWork2">What is between\n12/20 and 11/15?</string>
+    <string name="activityHardMathLevel2Ans1">0.6</string>
+    <string name="activityHardMathLevel2Ans2">0.5</string>
+    <string name="activityHardMathLevel2Ans3">0.45</string>
+    <string name="activityHardMathLevel2Ans4">0.65</string>
+
+    <string name="activityHardMathLevelWork3">A deck has\n36 cards. What\nis the probability\nof drawing a diamond?</string>
+    <string name="activityHardMathLevel3Ans1">0.25</string>
+    <string name="activityHardMathLevel3Ans2">0.5</string>
+    <string name="activityHardMathLevel3Ans3">0.3</string>
+    <string name="activityHardMathLevel3Ans4">0.2</string>
+
+    <string name="activityHardMathLevelWork4">For which figure\ndoes finding\nthe midline\nmake sense?</string>
+    <string name="activityHardMathLevel4Ans1">Rhombus</string>
+    <string name="activityHardMathLevel4Ans2">Trapezoid</string>
+    <string name="activityHardMathLevel4Ans3">Square</string>
+    <string name="activityHardMathLevel4Ans4">Circle</string>
+
+    <string name="activityHardMathLevelWork5">What is the\ngraph of the\nfunction y=kx+b?</string>
+    <string name="activityHardMathLevel5Ans1">Hyperbola</string>
+    <string name="activityHardMathLevel5Ans2">Straight line</string>
+    <string name="activityHardMathLevel5Ans3">Parabola</string>
+    <string name="activityHardMathLevel5Ans4">Exponential</string>
+
+    <string name="activityHardMathLevelWork6">Who is called\nthe "King of\nMathematics"?</string>
+    <string name="activityHardMathLevel6Ans1">Gauss</string>
+    <string name="activityHardMathLevel6Ans2">Vieta</string>
+    <string name="activityHardMathLevel6Ans3">Pythagoras</string>
+    <string name="activityHardMathLevel6Ans4">Euler</string>
+
+    <string name="activityHardMathLevelWork7">1-cos²t=?</string>
+    <string name="activityHardMathLevel7Ans1">tg²t</string>
+    <string name="activityHardMathLevel7Ans2">ctg²t</string>
+    <string name="activityHardMathLevel7Ans3">sin²t</string>
+    <string name="activityHardMathLevel7Ans4">arctg²</string>
+
+    <string name="activityHardMathLevelWork8">Who was called\nthe "Father of\nTrigonometry"?</string>
+    <string name="activityHardMathLevel8Ans1">Gauss</string>
+    <string name="activityHardMathLevel8Ans2">Heron</string>
+    <string name="activityHardMathLevel8Ans3">Archimedes</string>
+    <string name="activityHardMathLevel8Ans4">Hipparchus</string>
+
+    <string name="activityHardMathLevelWork9">What is cos30°?</string>
+    <string name="activityHardMathLevel9Ans1">√3/2</string>
+    <string name="activityHardMathLevel9Ans2">1/2</string>
+    <string name="activityHardMathLevel9Ans3">1</string>
+    <string name="activityHardMathLevel9Ans4">√2/2</string>
+
+    <string name="activityHardMathLevelWork10">Who introduced\nthe concept of sine?</string>
+    <string name="activityHardMathLevel10Ans1">Chester</string>
+    <string name="activityHardMathLevel10Ans2">Geras</string>
+    <string name="activityHardMathLevel10Ans3">Simplicius</string>
+    <string name="activityHardMathLevel10Ans4">Klügel</string>
+
+    <string name="activityHardMathLevelWork11">What is the\ncomplementary\nfunction of sine?</string>
+    <string name="activityHardMathLevel11Ans1">Tangent</string>
+    <string name="activityHardMathLevel11Ans2">Sine</string>
+    <string name="activityHardMathLevel11Ans3">Cosine</string>
+    <string name="activityHardMathLevel11Ans4">Secant</string>
+
+    <string name="activityHardMathLevelWork12">π/60=?</string>
+    <string name="activityHardMathLevel12Ans1">60°</string>
+    <string name="activityHardMathLevel12Ans2">40°</string>
+    <string name="activityHardMathLevel12Ans3">90°</string>
+    <string name="activityHardMathLevel12Ans4">30°</string>
+
+    <string name="activityHardMathLevelWork13">What is another\nname for the\n"independent\nvariable"?</string>
+    <string name="activityHardMathLevel13Ans1">Degree value</string>
+    <string name="activityHardMathLevel13Ans2">Angular argument</string>
+    <string name="activityHardMathLevel13Ans3">Radian measure</string>
+    <string name="activityHardMathLevel13Ans4">Trigonometric variable</string>
+
+    <string name="activityHardMathLevelWork14">Who is the\ncoordinate\nsystem named after?</string>
+    <string name="activityHardMathLevel14Ans1">Pascal</string>
+    <string name="activityHardMathLevel14Ans2">Lemaire</string>
+    <string name="activityHardMathLevel14Ans3">Descartes</string>
+    <string name="activityHardMathLevel14Ans4">Vieta</string>
+
+    <string name="activityHardMathLevelWork15">ctg x=?</string>
+    <string name="activityHardMathLevel15Ans1">cos x/sin x</string>
+    <string name="activityHardMathLevel15Ans2">tg x/cos x</string>
+    <string name="activityHardMathLevel15Ans3">1/sin x+cos x</string>
+    <string name="activityHardMathLevel15Ans4">2sin x-tg x</string>
+
+    <string name="activityHardMathLevelWork16">Polygons with\nequal areas\nare called…?</string>
+    <string name="activityHardMathLevel16Ans1">Isosceles</string>
+    <string name="activityHardMathLevel16Ans2">Identical</string>
+    <string name="activityHardMathLevel16Ans3">Equilateral</string>
+    <string name="activityHardMathLevel16Ans4">Equiareal</string>
+
+    <string name="activityHardMathLevelWork17">The fractional\npart of a\ndecimal logarithm\nis called…?</string>
+    <string name="activityHardMathLevel17Ans1">Mantissa</string>
+    <string name="activityHardMathLevel17Ans2">Base</string>
+    <string name="activityHardMathLevel17Ans3">Remainder</string>
+    <string name="activityHardMathLevel17Ans4">Error</string>
+
+    <string name="activityHardMathLevelWork18">A geometric\nconcept that\ndescribes the\nuniformity of forms?</string>
+    <string name="activityHardMathLevel18Ans1">Similarity</string>
+    <string name="activityHardMathLevel18Ans2">Uniformity</string>
+    <string name="activityHardMathLevel18Ans3">Affiliation</string>
+    <string name="activityHardMathLevel18Ans4">State</string>
+
+    <string name="activityHardMathLevelWork19">What are regular\ntriangular pyramids\ncalled?</string>
+    <string name="activityHardMathLevel19Ans1">Cones</string>
+    <string name="activityHardMathLevel19Ans2">Dendrites</string>
+    <string name="activityHardMathLevel19Ans3">Tetradons</string>
+    <string name="activityHardMathLevel19Ans4">Tetrahedrons</string>
+
+    <string name="activityHardMathLevelWork20">A unit of area\n(4047 m²)?</string>
+    <string name="activityHardMathLevel20Ans1">Hectare</string>
+    <string name="activityHardMathLevel20Ans2">Acre</string>
+    <string name="activityHardMathLevel20Ans3">Verst</string>
+    <string name="activityHardMathLevel20Ans4">Arshin</string>
+    <!-- All geography-related tasks of Easy level: -->
+    <string name="activityEasyGeoLevelWork1">Capital\nof Ukraine?</string>
+    <string name="activityEasyGeoLevel1Ans1">Kyiv</string>+
+    <string name="activityEasyGeoLevel1Ans2">Odesa</string>
+    <string name="activityEasyGeoLevel1Ans3">Kharkiv</string>
+    <string name="activityEasyGeoLevel1Ans4">Donetsk</string>
+
+    <string name="activityEasyGeoLevelWork2">How many\noceans are\nthere on\nour planet?</string>
+    <string name="activityEasyGeoLevel2Ans1">4</string>
+    <string name="activityEasyGeoLevel2Ans2">5</string>+
+    <string name="activityEasyGeoLevel2Ans3">6</string>
+    <string name="activityEasyGeoLevel2Ans4">3</string>
+
+    <string name="activityEasyGeoLevelWork3">Which\ncontinent\nis the\nhottest?</string>
+    <string name="activityEasyGeoLevel3Ans1">South America</string>
+    <string name="activityEasyGeoLevel3Ans2">North America</string>
+    <string name="activityEasyGeoLevel3Ans3">Africa</string>+
+    <string name="activityEasyGeoLevel3Ans4">Australia</string>
+
+    <string name="activityEasyGeoLevelWork4">Where do\npolar bears\nlive?</string>
+    <string name="activityEasyGeoLevel4Ans1">Arctic</string>+
+    <string name="activityEasyGeoLevel4Ans2">Antarctica</string>
+
+    <string name="activityEasyGeoLevelWork5">Largest\nocean?</string>
+    <string name="activityEasyGeoLevel5Ans1">Southern</string>
+    <string name="activityEasyGeoLevel5Ans2">Pacific</string>+
+    <string name="activityEasyGeoLevel5Ans3">Indian</string>
+    <string name="activityEasyGeoLevel5Ans4">Atlantic</string>
+
+    <string name="activityEasyGeoLevelWork6">Hardest\nmineral?</string>
+    <string name="activityEasyGeoLevel6Ans1">Barite</string>
+    <string name="activityEasyGeoLevel6Ans2">Granite</string>
+    <string name="activityEasyGeoLevel6Ans3">Diamond</string>+
+    <string name="activityEasyGeoLevel6Ans4">Marble</string>
+
+    <string name="activityEasyGeoLevelWork7">Line that\ndivides the\nEarth into\ntwo hemispheres?</string>
+    <string name="activityEasyGeoLevel7Ans1">Parallel</string>
+    <string name="activityEasyGeoLevel7Ans2">Meridian</string>
+    <string name="activityEasyGeoLevel7Ans3">Equator</string>+
+    <string name="activityEasyGeoLevel7Ans4">Perpendicular</string>
+
+    <string name="activityEasyGeoLevelWork8">Where does\na river\nbegin?</string>
+    <string name="activityEasyGeoLevel8Ans1">Source</string>+
+    <string name="activityEasyGeoLevel8Ans2">Mouth</string>
+    <string name="activityEasyGeoLevel8Ans3">Tributary</string>
+    <string name="activityEasyGeoLevel8Ans4">Channel</string>
+
+    <string name="activityEasyGeoLevelWork9">Smallest\npart of\nthe world?</string>
+    <string name="activityEasyGeoLevel9Ans1">Greenland</string>
+    <string name="activityEasyGeoLevel9Ans2">America</string>
+    <string name="activityEasyGeoLevel9Ans3">Austria</string>
+    <string name="activityEasyGeoLevel9Ans4">Australia</string>+
+
+    <string name="activityEasyGeoLevelWork10">Highest\nmountain peak?</string>
+    <string name="activityEasyGeoLevel10Ans1">Andes</string>
+    <string name="activityEasyGeoLevel10Ans2">Mount Everest</string>+
+    <string name="activityEasyGeoLevel10Ans3">Cordilleras</string>
+    <string name="activityEasyGeoLevel10Ans4">Elbrus</string>
+
+    <string name="activityEasyGeoLevelWork11">Device for\ndetermining\ncardinal\ndirections?</string>
+    <string name="activityEasyGeoLevel11Ans1">Telescope</string>
+    <string name="activityEasyGeoLevel11Ans2">Theodolite</string>
+    <string name="activityEasyGeoLevel11Ans3">Barometer</string>
+    <string name="activityEasyGeoLevel11Ans4">Compass</string>+
+
+    <string name="activityEasyGeoLevelWork12">Tallest\nwaterfall\nin the world?</string>
+    <string name="activityEasyGeoLevel12Ans1">Angel Falls</string>+
+    <string name="activityEasyGeoLevel12Ans2">Tugela Falls</string>
+    <string name="activityEasyGeoLevel12Ans3">Olo\'upena Falls</string>
+    <string name="activityEasyGeoLevel12Ans4">Yumbilla Falls</string>
+
+    <string name="activityEasyGeoLevelWork13">How long\ndoes it take\nfor the Earth\nto orbit\nthe Sun?</string>
+    <string name="activityEasyGeoLevel13Ans1">Day</string>
+    <string name="activityEasyGeoLevel13Ans2">Year</string>+
+    <string name="activityEasyGeoLevel13Ans3">Month</string>
+    <string name="activityEasyGeoLevel13Ans4">Week</string>
+
+    <string name="activityEasyGeoLevelWork14">How many\ncontinents\nare there?</string>
+    <string name="activityEasyGeoLevel14Ans1">4</string>
+    <string name="activityEasyGeoLevel14Ans2">5</string>
+    <string name="activityEasyGeoLevel14Ans3">6</string>+
+    <string name="activityEasyGeoLevel14Ans4">7</string>
+
+    <string name="activityEasyGeoLevelWork15">Deepest\nlake?</string>
+    <string name="activityEasyGeoLevel15Ans1">Tanganyika</string>
+    <string name="activityEasyGeoLevel15Ans2">Baikal</string>+
+    <string name="activityEasyGeoLevel15Ans3">Chad</string>
+    <string name="activityEasyGeoLevel15Ans4">Nyasa</string>
+
+    <string name="activityEasyGeoLevelWork16">Longest\nriver\nin the world?</string>
+    <string name="activityEasyGeoLevel16Ans1">Nile</string>+
+    <string name="activityEasyGeoLevel16Ans2">Amazon</string>
+    <string name="activityEasyGeoLevel16Ans3">Euphrates</string>
+    <string name="activityEasyGeoLevel16Ans4">Congo</string>
+
+    <string name="activityEasyGeoLevelWork17">Most\npopulated\ncountry?</string>
+    <string name="activityEasyGeoLevel17Ans1">China</string>+
+    <string name="activityEasyGeoLevel17Ans2">USA</string>
+    <string name="activityEasyGeoLevel17Ans3">Pakistan</string>
+    <string name="activityEasyGeoLevel17Ans4">Russia</string>
+
+    <string name="activityEasyGeoLevelWork18">Largest\nisland?</string>
+    <string name="activityEasyGeoLevel18Ans1">Borneo</string>
+    <string name="activityEasyGeoLevel18Ans2">New Guinea</string>
+    <string name="activityEasyGeoLevel18Ans3">Greenland</string>+
+    <string name="activityEasyGeoLevel18Ans4">Madagascar</string>
+
+    <string name="activityEasyGeoLevelWork19">Who\ndiscovered\nAmerica?</string>
+    <string name="activityEasyGeoLevel19Ans1">Christopher\nColumbus</string>+
+    <string name="activityEasyGeoLevel19Ans2">Vasco\nda Gama</string>
+    <string name="activityEasyGeoLevel19Ans3">Abel\nTasman</string>
+    <string name="activityEasyGeoLevel19Ans4">Ferdinand\nMagellan</string>
+
+    <string name="activityEasyGeoLevelWork20">Where do\nkangaroos\nlive?</string>
+    <string name="activityEasyGeoLevel20Ans1">Australia</string>
+    <string name="activityEasyGeoLevel20Ans2">Africa</string>
+    <string name="activityEasyGeoLevel20Ans3">North America</string>
+    <string name="activityEasyGeoLevel20Ans4">South America</string>
+
+    <!-- All geography-related tasks of Normal level: -->
+    <string name="activityNormalGeoLevelWork1">How many\ncountries\nare there\nin the world?</string>
+    <string name="activityNormalGeoLevel1Ans1">197</string>+
+    <string name="activityNormalGeoLevel1Ans2">195</string>
+    <string name="activityNormalGeoLevel1Ans3">212</string>
+    <string name="activityNormalGeoLevel1Ans4">158</string>
+
+    <string name="activityNormalGeoLevelWork2">Least\npopulated\ncity in\nthe world?</string>
+    <string name="activityNormalGeoLevel2Ans1">Melnik</string>
+    <string name="activityNormalGeoLevel2Ans2">Buford</string>
+    <string name="activityNormalGeoLevel2Ans3">Vatican City</string>+
+    <string name="activityNormalGeoLevel2Ans4">Hum Hum</string>
+
+    <string name="activityNormalGeoLevelWork3">Oldest\nmountains?</string>
+    <string name="activityNormalGeoLevel3Ans1">Ural Mountains</string>+
+    <string name="activityNormalGeoLevel3Ans2">Scandinavian\nMountains</string>
+    <string name="activityNormalGeoLevel3Ans3">Khibiny</string>
+    <string name="activityNormalGeoLevel3Ans4">Andes</string>
+
+    <string name="activityNormalGeoLevelWork4">Where is\nthe deepest\nsubway\nin the world?</string>
+    <string name="activityNormalGeoLevel4Ans1">China</string>
+    <string name="activityNormalGeoLevel4Ans2">USA</string>
+    <string name="activityNormalGeoLevel4Ans3">Russia</string>
+    <string name="activityNormalGeoLevel4Ans4">Ukraine</string>+
+
+    <string name="activityNormalGeoLevelWork5">How many\nstars are\nthere on\nthe US flag?</string>
+    <string name="activityNormalGeoLevel5Ans1">30</string>
+    <string name="activityNormalGeoLevel5Ans2">40</string>
+    <string name="activityNormalGeoLevel5Ans3">50</string>+
+    <string name="activityNormalGeoLevel5Ans4">45</string>
+
+    <string name="activityNormalGeoLevelWork6">Capital\nof Japan?</string>
+    <string name="activityNormalGeoLevel6Ans1">Yokohama</string>
+    <string name="activityNormalGeoLevel6Ans2">Shanghai</string>
+    <string name="activityNormalGeoLevel6Ans3">Tokyo</string>+
+    <string name="activityNormalGeoLevel6Ans4">Beijing</string>
+
+    <string name="activityNormalGeoLevelWork7">Largest\npeninsula\nin the world?</string>
+    <string name="activityNormalGeoLevel7Ans1">Arabian</string>+
+    <string name="activityNormalGeoLevel7Ans2">Taimyr</string>
+    <string name="activityNormalGeoLevel7Ans3">Kola</string>
+    <string name="activityNormalGeoLevel7Ans4">Florida</string>
+
+    <string name="activityNormalGeoLevelWork8">Single\ngod of\nIslam?</string>
+    <string name="activityNormalGeoLevel8Ans1">Jesus</string>
+    <string name="activityNormalGeoLevel8Ans2">Allah</string>+
+    <string name="activityNormalGeoLevel8Ans3">Buddha</string>
+    <string name="activityNormalGeoLevel8Ans4">Shiva</string>
+
+    <string name="activityNormalGeoLevelWork9">Which\nobject is\nthe odd\none out?</string>
+    <string name="activityNormalGeoLevel9Ans1">Lake\nMichigan</string>
+    <string name="activityNormalGeoLevel9Ans2">Chinatown</string>
+    <string name="activityNormalGeoLevel9Ans3">Lake\nChad</string>+
+    <string name="activityNormalGeoLevel9Ans4">Niagara\nFalls</string>
+
+    <string name="activityNormalGeoLevelWork10">Largest\nvolcano?</string>
+    <string name="activityNormalGeoLevel10Ans1">Sangay</string>+
+    <string name="activityNormalGeoLevel10Ans2">Kilimanjaro</string>
+    <string name="activityNormalGeoLevel10Ans3">Cotopaxi</string>
+    <string name="activityNormalGeoLevel10Ans4">Elbrus</string>
+
+    <string name="activityNormalGeoLevelWork11">What was\nthe first\npaper made\nfrom?</string>
+    <string name="activityNormalGeoLevel11Ans1">Straw</string>
+    <string name="activityNormalGeoLevel11Ans2">Rags</string>+
+    <string name="activityNormalGeoLevel11Ans3">Wood</string>
+    <string name="activityNormalGeoLevel11Ans4">Papyrus</string>
+
+    <string name="activityNormalGeoLevelWork12">Land of\nthe rising\nsun?</string>
+    <string name="activityNormalGeoLevel12Ans1">Vietnam</string>
+    <string name="activityNormalGeoLevel12Ans2">China</string>
+    <string name="activityNormalGeoLevel12Ans3">Japan</string>+
+    <string name="activityNormalGeoLevel12Ans4">Korea</string>
+
+    <string name="activityNormalGeoLevelWork13">Capital\nof what\nis Prague?</string>
+    <string name="activityNormalGeoLevel13Ans1">Czech Republic</string>+
+    <string name="activityNormalGeoLevel13Ans2">Romania</string>
+    <string name="activityNormalGeoLevel13Ans3">Austria</string>
+    <string name="activityNormalGeoLevel13Ans4">Denmark</string>
+
+    <string name="activityNormalGeoLevelWork14">Which\ncountry\'s\nflag has\na maple\nleaf?</string>
+    <string name="activityNormalGeoLevel14Ans1">Sweden</string>
+    <string name="activityNormalGeoLevel14Ans2">Norway</string>
+    <string name="activityNormalGeoLevel14Ans3">Austria</string>
+    <string name="activityNormalGeoLevel14Ans4">Canada</string>+
+
+    <string name="activityNormalGeoLevelWork15">Modern\nname of\nConstantinople?</string>
+    <string name="activityNormalGeoLevel15Ans1">Copenhagen</string>
+    <string name="activityNormalGeoLevel15Ans2">Istanbul</string>+
+    <string name="activityNormalGeoLevel15Ans3">Italy</string>
+    <string name="activityNormalGeoLevel15Ans4">Vatican</string>
+
+    <string name="activityNormalGeoLevelWork16">Where is\nthe Taj Mahal?</string>
+    <string name="activityNormalGeoLevel16Ans1">Czech Republic</string>
+    <string name="activityNormalGeoLevel16Ans2">Rome</string>
+    <string name="activityNormalGeoLevel16Ans3">India</string>+
+    <string name="activityNormalGeoLevel16Ans4">Italy</string>
+
+    <string name="activityNormalGeoLevelWork17">Where were\nchess\ninvented?</string>
+    <string name="activityNormalGeoLevel17Ans1">Turkey</string>
+    <string name="activityNormalGeoLevel17Ans2">India</string>+
+    <string name="activityNormalGeoLevel17Ans3">Iran</string>
+    <string name="activityNormalGeoLevel17Ans4">Iraq</string>
+
+    <string name="activityNormalGeoLevelWork18">Which\ncountry is\ncalled the\n"banker"\nof Europe?</string>
+    <string name="activityNormalGeoLevel18Ans1">Germany</string>
+    <string name="activityNormalGeoLevel18Ans2">Norway</string>
+    <string name="activityNormalGeoLevel18Ans3">Switzerland</string>+
+    <string name="activityNormalGeoLevel18Ans4">Sweden</string>
+
+    <string name="activityNormalGeoLevelWork19">Official\ncurrency\nof China?</string>
+    <string name="activityNormalGeoLevel19Ans1">Yuan</string>+
+    <string name="activityNormalGeoLevel19Ans2">Yen</string>
+    <string name="activityNormalGeoLevel19Ans3">Euro</string>
+    <string name="activityNormalGeoLevel19Ans4">Dollar</string>
+
+    <string name="activityNormalGeoLevelWork20">Birthplace\nof the\nOlympic\nGames?</string>
+    <string name="activityNormalGeoLevel20Ans1">Greece</string>+
+    <string name="activityNormalGeoLevel20Ans2">Italy</string>
+    <string name="activityNormalGeoLevel20Ans3">Macedonia</string>
+    <string name="activityNormalGeoLevel20Ans4">Babylon</string>
+
+    <!-- All geography-related tasks of Hard level: -->
+    <string name="activityHardGeoLevelWork1">Which\nAfrican\ncountry has\nthe largest\npopulation?</string>
+    <string name="activityHardGeoLevel1Ans1">Algeria</string>
+    <string name="activityHardGeoLevel1Ans2">Nigeria</string>+
+    <string name="activityHardGeoLevel1Ans3">Morocco</string>
+    <string name="activityHardGeoLevel1Ans4">Kenya</string>
+
+    <string name="activityHardGeoLevelWork2">Largest\nriver in\nRussia?</string>
+    <string name="activityHardGeoLevel2Ans1">Lena</string>+
+    <string name="activityHardGeoLevel2Ans2">Irtysh</string>
+    <string name="activityHardGeoLevel2Ans3">Volga</string>
+    <string name="activityHardGeoLevel2Ans4">Yenisei</string>
+
+    <string name="activityHardGeoLevelWork3">Is Cape\nChelyuskin\nthe northernmost\npoint of\nEurasia?</string>
+    <string name="activityHardGeoLevel3Ans1">True</string>+
+    <string name="activityHardGeoLevel3Ans2">False</string>
+
+    <string name="activityHardGeoLevelWork4">Largest\ncountry in\nSouth America?</string>
+    <string name="activityHardGeoLevel4Ans1">USA</string>
+    <string name="activityHardGeoLevel4Ans2">Brazil</string>+
+    <string name="activityHardGeoLevel4Ans3">Argentina</string>
+    <string name="activityHardGeoLevel4Ans4">Peru</string>
+
+    <string name="activityHardGeoLevelWork5">Where is\nthe deepest\nmine in\nthe world?</string>
+    <string name="activityHardGeoLevel5Ans1">USA</string>
+    <string name="activityHardGeoLevel5Ans2">Russia</string>
+    <string name="activityHardGeoLevel5Ans3">South Africa</string>+
+    <string name="activityHardGeoLevel5Ans4">Canada</string>
+
+    <string name="activityHardGeoLevelWork6">What\ndirection\ndoes the\npampero\nwind blow?</string>
+    <string name="activityHardGeoLevel6Ans1">Southwest</string>+
+    <string name="activityHardGeoLevel6Ans2">Southeast</string>
+    <string name="activityHardGeoLevel6Ans3">Northeast</string>
+    <string name="activityHardGeoLevel6Ans4">Northwest</string>
+
+    <string name="activityHardGeoLevelWork7">Youngest\nocean?</string>
+    <string name="activityHardGeoLevel7Ans1">Indian</string>
+    <string name="activityHardGeoLevel7Ans2">Pacific</string>
+    <string name="activityHardGeoLevel7Ans3">Atlantic</string>+
+    <string name="activityHardGeoLevel7Ans4">Southern</string>
+
+    <string name="activityHardGeoLevelWork8">Where do\nMonegasques\nlive?</string>
+    <string name="activityHardGeoLevel8Ans1">Monegasque</string>
+    <string name="activityHardGeoLevel8Ans2">Italy</string>
+    <string name="activityHardGeoLevel8Ans3">Monaco Island</string>
+    <string name="activityHardGeoLevel8Ans4">Monaco</string>+
+
+    <string name="activityHardGeoLevelWork9">Sea that\nforms the\nborder between\nIsrael and\nJordan?</string>
+    <string name="activityHardGeoLevel9Ans1">Caspian</string>
+    <string name="activityHardGeoLevel9Ans2">Black</string>
+    <string name="activityHardGeoLevel9Ans3">Red</string>
+    <string name="activityHardGeoLevel9Ans4">Dead</string>+
+
+    <string name="activityHardGeoLevelWork10">Capital\nof Australia?</string>
+    <string name="activityHardGeoLevel10Ans1">Sydney</string>
+    <string name="activityHardGeoLevel10Ans2">Canberra</string>+
+    <string name="activityHardGeoLevel10Ans3">Melbourne</string>
+    <string name="activityHardGeoLevel10Ans4">Brisbane</string>
+
+    <string name="activityHardGeoLevelWork11">In which\ncountry is\nthe skirt\nthe official\nmale attire?</string>
+    <string name="activityHardGeoLevel11Ans1">Scotland</string>+
+    <string name="activityHardGeoLevel11Ans2">Algeria</string>
+    <string name="activityHardGeoLevel11Ans3">Singapore</string>
+    <string name="activityHardGeoLevel11Ans4">Brisbane</string>
+
+    <string name="activityHardGeoLevelWork12">Birthplace\nof porcelain?</string>
+    <string name="activityHardGeoLevel12Ans1">Greece</string>
+    <string name="activityHardGeoLevel12Ans2">Portugal</string>
+    <string name="activityHardGeoLevel12Ans3">Japan</string>
+    <string name="activityHardGeoLevel12Ans4">China</string>+
+
+    <string name="activityHardGeoLevelWork13">What is\nthe world\npopulation?</string>
+    <string name="activityHardGeoLevel13Ans1">1.5 billion</string>
+    <string name="activityHardGeoLevel13Ans2">3 billion</string>
+    <string name="activityHardGeoLevel13Ans3">6.5 billion</string>
+    <string name="activityHardGeoLevel13Ans4">> 7 billion</string>+
+
+    <string name="activityHardGeoLevelWork14">Can a\n250-meter\nhigh elevation\nbe called\na mountain?</string>
+    <string name="activityHardGeoLevel14Ans1">Yes</string>+
+    <string name="activityHardGeoLevel14Ans2">No</string>
+
+    <string name="activityHardGeoLevelWork15">Which\nrock is\nan organic\nsedimentary?</string>
+    <string name="activityHardGeoLevel15Ans1">Sand</string>
+    <string name="activityHardGeoLevel15Ans2">Granite</string>
+    <string name="activityHardGeoLevel15Ans3">Limestone</string>+
+    <string name="activityHardGeoLevel15Ans4">Gypsum</string>
+
+    <string name="activityHardGeoLevelWork16">Which\nrock is\nmetamorphic?</string>
+    <string name="activityHardGeoLevel16Ans1">Granite</string>
+    <string name="activityHardGeoLevel16Ans2">Marble</string>+
+    <string name="activityHardGeoLevel16Ans3">Salt</string>
+    <string name="activityHardGeoLevel16Ans4">Gravel</string>
+
+    <string name="activityHardGeoLevelWork17">Which\nlithospheric\nplate is\nthe largest?</string>
+    <string name="activityHardGeoLevel17Ans1">Australian</string>
+    <string name="activityHardGeoLevel17Ans2">Eurasian</string>
+    <string name="activityHardGeoLevel17Ans3">African</string>
+    <string name="activityHardGeoLevel17Ans4">North\nAmerican</string>+
+
+    <string name="activityHardGeoLevelWork18">What\ncauses\ncirques in\nthe mountains?</string>
+    <string name="activityHardGeoLevel18Ans1">Wind</string>
+    <string name="activityHardGeoLevel18Ans2">Glaciers and\nmeltwater</string>+
+    <string name="activityHardGeoLevel18Ans3">Permafrost</string>
+    <string name="activityHardGeoLevel18Ans4">Humans</string>
+
+    <string name="activityHardGeoLevelWork19">Which\ncountry is\nnot a\nmonarchy?</string>
+    <string name="activityHardGeoLevel19Ans1">Spain</string>
+    <string name="activityHardGeoLevel19Ans2">Sweden</string>
+    <string name="activityHardGeoLevel19Ans3">Japan</string>
+    <string name="activityHardGeoLevel19Ans4">Czech Republic</string>+
+
+    <string name="activityHardGeoLevelWork20">Which\ncountry has\nthe largest\niron ore\nreserves?</string>
+    <string name="activityHardGeoLevel20Ans1">Argentina</string>
+    <string name="activityHardGeoLevel20Ans2">USA</string>
+    <string name="activityHardGeoLevel20Ans3">Mexico</string>
+    <string name="activityHardGeoLevel20Ans4">Brazil</string>+
+
+    <!-- All physics-related tasks of Easy level: -->
+    <string name="activityEasyPhLevelWork1">Unit of\ncurrent?</string>
+    <string name="activityEasyPhLevel1Ans1">Joule</string>
+    <string name="activityEasyPhLevel1Ans2">Ampere</string>+
+    <string name="activityEasyPhLevel1Ans3">Kelvin</string>
+    <string name="activityEasyPhLevel1Ans4">Mole</string>
+
+    <string name="activityEasyPhLevelWork2">Device for\nmeasuring\nvoltage?</string>
+    <string name="activityEasyPhLevel2Ans1">Voltmeter</string>+
+    <string name="activityEasyPhLevel2Ans2">Ammeter</string>
+    <string name="activityEasyPhLevel2Ans3">Dynamometer</string>
+    <string name="activityEasyPhLevel2Ans4">Barometer</string>
+
+    <string name="activityEasyPhLevelWork3">Like charges…</string>
+    <string name="activityEasyPhLevel3Ans1">attract</string>
+    <string name="activityEasyPhLevel3Ans2">repel</string>+
+
+    <string name="activityEasyPhLevelWork4">Smallest\nparticle\nof matter?</string>
+    <string name="activityEasyPhLevel4Ans1">Quark</string>
+    <string name="activityEasyPhLevel4Ans2">Atom</string>
+    <string name="activityEasyPhLevel4Ans3">Molecule</string>+
+    <string name="activityEasyPhLevel4Ans4">Electron</string>
+
+    <string name="activityEasyPhLevelWork5">Ordered\nmovement of\ncharged\nparticles?</string>
+    <string name="activityEasyPhLevel5Ans1">Radiation</string>
+    <string name="activityEasyPhLevel5Ans2">Heat</string>
+    <string name="activityEasyPhLevel5Ans3">Current</string>+
+    <string name="activityEasyPhLevel5Ans4">Diffusion</string>
+
+    <string name="activityEasyPhLevelWork6">Where are\nthere more\nmolecules:\nin a liter\nof water at\n2°C or 20°C?</string>
+    <string name="activityEasyPhLevel6Ans1">At 2°C</string>
+    <string name="activityEasyPhLevel6Ans2">At 20°C</string>
+    <string name="activityEasyPhLevel6Ans3">Same</string>+
+
+    <string name="activityEasyPhLevelWork7">In which\nbodies does\ndiffusion\noccur\nslowest?</string>
+    <string name="activityEasyPhLevel7Ans1">Solids</string>+
+    <string name="activityEasyPhLevel7Ans2">Liquids</string>
+    <string name="activityEasyPhLevel7Ans3">Gases</string>
+    <string name="activityEasyPhLevel7Ans4">Plasma</string>
+
+    <string name="activityEasyPhLevelWork8">What does\nthe formula\nF=ma mean?</string>
+    <string name="activityEasyPhLevel8Ans1">Newton\'s\n2nd Law</string>+
+    <string name="activityEasyPhLevel8Ans2">Ohm\'s Law</string>
+    <string name="activityEasyPhLevel8Ans3">Law of\nConservation\nof Momentum</string>
+    <string name="activityEasyPhLevel8Ans4">Coulomb\'s\nLaw</string>
+
+    <string name="activityEasyPhLevelWork9">How to\nfind the\nmass of\na body?</string>
+    <string name="activityEasyPhLevel9Ans1">m*F</string>
+    <string name="activityEasyPhLevel9Ans2">ρ*V</string>+
+    <string name="activityEasyPhLevel9Ans3">a*h</string>
+    <string name="activityEasyPhLevel9Ans4">m*a</string>
+
+    <string name="activityEasyPhLevelWork10">What does\na dynamometer\nmeasure?</string>
+    <string name="activityEasyPhLevel10Ans1">Pressure</string>
+    <string name="activityEasyPhLevel10Ans2">Speed</string>
+    <string name="activityEasyPhLevel10Ans3">Force</string>+
+    <string name="activityEasyPhLevel10Ans4">Density</string>
+
+    <string name="activityEasyPhLevelWork11">Why does\nthe Earth\ngain 400\ntons of\nweight\neach year?</string>
+    <string name="activityEasyPhLevel11Ans1">Core\nexpansion</string>
+    <string name="activityEasyPhLevel11Ans2">Birth of\ncreatures</string>
+    <string name="activityEasyPhLevel11Ans3">Human\nactivity</string>
+    <string name="activityEasyPhLevel11Ans4">Cosmic\ndust</string>+
+
+    <string name="activityEasyPhLevelWork12">Which snow\nmelts faster:\nclean or\ndirty?</string>
+    <string name="activityEasyPhLevel12Ans1">Clean</string>
+    <string name="activityEasyPhLevel12Ans2">Dirty</string>+
+
+    <string name="activityEasyPhLevelWork13">If a body\'s\ndensity is\ngreater than\nthe liquid\'s,\nwill it sink?</string>
+    <string name="activityEasyPhLevel13Ans1">True</string>+
+    <string name="activityEasyPhLevel13Ans2">False</string>
+
+    <string name="activityEasyPhLevelWork14">Who invented\nthe incandescent\nlight bulb?</string>
+    <string name="activityEasyPhLevel14Ans1">Popov</string>
+    <string name="activityEasyPhLevel14Ans2">Tereshkova</string>
+    <string name="activityEasyPhLevel14Ans3">Maxwell</string>
+    <string name="activityEasyPhLevel14Ans4">Edison</string>+
+
+    <string name="activityEasyPhLevelWork15">Who invented\nthe radio?</string>
+    <string name="activityEasyPhLevel15Ans1">Popov</string>+
+    <string name="activityEasyPhLevel15Ans2">Ivanov</string>
+    <string name="activityEasyPhLevel15Ans3">Tesla</string>
+    <string name="activityEasyPhLevel15Ans4">Newton</string>
+
+    <string name="activityEasyPhLevelWork16">Property\nof gas?</string>
+    <string name="activityEasyPhLevel16Ans1">Maintains\nshape</string>
+    <string name="activityEasyPhLevel16Ans2">Maintains\nvolume</string>
+    <string name="activityEasyPhLevel16Ans3">Fills\ncontainer</string>+
+    <string name="activityEasyPhLevel16Ans4">Molecules\nbarely move</string>
+
+    <string name="activityEasyPhLevelWork17">Which letter\ndenotes\nspeed?</string>
+    <string name="activityEasyPhLevel17Ans1">V</string>
+    <string name="activityEasyPhLevel17Ans2">F</string>
+    <string name="activityEasyPhLevel17Ans3">a</string>
+    <string name="activityEasyPhLevel17Ans4">v</string>+
+
+    <string name="activityEasyPhLevelWork18">Phenomenon\nof a body\nmaintaining\nspeed in\nthe absence\nof external\nforces?</string>
+    <string name="activityEasyPhLevel18Ans1">Perpetual\nmotion</string>
+    <string name="activityEasyPhLevel18Ans2">Momentum</string>
+    <string name="activityEasyPhLevel18Ans3">Inertia</string>+
+    <string name="activityEasyPhLevel18Ans4">Acceleration</string>
+
+    <string name="activityEasyPhLevelWork19">Property of\na solid to\nreturn to\nits original\nshape after\ndeformation?</string>
+    <string name="activityEasyPhLevel19Ans1">Elasticity</string>+
+    <string name="activityEasyPhLevel19Ans2">Flexibility</string>
+    <string name="activityEasyPhLevel19Ans3">Plasticity</string>
+    <string name="activityEasyPhLevel19Ans4">Durability</string>
+
+    <string name="activityEasyPhLevelWork20">Does water\ncool faster\nin a full\nkettle than\nin a half-full\none?</string>
+    <string name="activityEasyPhLevel20Ans1">True</string>+
+    <string name="activityEasyPhLevel20Ans2">False</string>
+
+    <!-- All physics-related tasks of Normal level: -->
+    <string name="activityNormalPhLevelWork1">How to\naccelerate\ndiffusion\nin a solid?</string>
+    <string name="activityNormalPhLevel1Ans1">Irradiate</string>
+    <string name="activityNormalPhLevel1Ans2">Place in\nliquid</string>
+    <string name="activityNormalPhLevel1Ans3">Cool</string>
+    <string name="activityNormalPhLevel1Ans4">Heat</string>+
+
+    <string name="activityNormalPhLevelWork2">Types of\nlenses?</string>
+    <string name="activityNormalPhLevel2Ans1">Matte</string>
+    <string name="activityNormalPhLevel2Ans2">Monochrome</string>
+    <string name="activityNormalPhLevel2Ans3">Biconvex</string>+
+    <string name="activityNormalPhLevel2Ans4">Concentric</string>
+
+    <string name="activityNormalPhLevelWork3">What was\nLomonosov\'s\nfull name?</string>
+    <string name="activityNormalPhLevel3Ans1">Mikhail\nVasilyevich</string>+
+    <string name="activityNormalPhLevel3Ans2">Vasily\nPetrovich</string>
+    <string name="activityNormalPhLevel3Ans3">Mikhail\nIvanovich</string>
+    <string name="activityNormalPhLevel3Ans4">Ivan\nVasilyevich</string>
+
+    <string name="activityNormalPhLevelWork4">Charged\nparticle\nin the\nnucleus?</string>
+    <string name="activityNormalPhLevel4Ans1">Gluon</string>
+    <string name="activityNormalPhLevel4Ans2">Electron</string>
+    <string name="activityNormalPhLevel4Ans3">Neutron</string>
+    <string name="activityNormalPhLevel4Ans4">Proton</string>+
+
+    <string name="activityNormalPhLevelWork5">Who created\nthe first\nsteam engine?</string>
+    <string name="activityNormalPhLevel5Ans1">Ivan\nPolzunov</string>+
+    <string name="activityNormalPhLevel5Ans2">Mikhail\nPopov</string>
+    <string name="activityNormalPhLevel5Ans3">Wilhelm\nRöntgen</string>
+    <string name="activityNormalPhLevel5Ans4">Niels\nBohr</string>
+
+    <string name="activityNormalPhLevelWork6">Most\nrefractory\nmetal?</string>
+    <string name="activityNormalPhLevel6Ans1">Lead</string>
+    <string name="activityNormalPhLevel6Ans2">Tungsten</string>+
+    <string name="activityNormalPhLevel6Ans3">Rubidium</string>
+    <string name="activityNormalPhLevel6Ans4">Zirconium</string>
+
+    <string name="activityNormalPhLevelWork7">Unit of\nsound\npressure?</string>
+    <string name="activityNormalPhLevel7Ans1">Decibel</string>+
+    <string name="activityNormalPhLevel7Ans2">Knot</string>
+    <string name="activityNormalPhLevel7Ans3">Watt</string>
+    <string name="activityNormalPhLevel7Ans4">Ampere</string>
+
+    <string name="activityNormalPhLevelWork8">What\ndetermines\nthe pitch\nof sound?</string>
+    <string name="activityNormalPhLevel8Ans1">Amplitude</string>
+    <string name="activityNormalPhLevel8Ans2">Power</string>
+    <string name="activityNormalPhLevel8Ans3">Loudness</string>
+    <string name="activityNormalPhLevel8Ans4">Frequency</string>+
+
+    <string name="activityNormalPhLevelWork9">Field\naround\nevery\nobject?</string>
+    <string name="activityNormalPhLevel9Ans1">Radiation</string>
+    <string name="activityNormalPhLevel9Ans2">Gravitational</string>+
+    <string name="activityNormalPhLevel9Ans3">Electric</string>
+    <string name="activityNormalPhLevel9Ans4">Magnetic</string>
+
+    <string name="activityNormalPhLevelWork10">Type of\ncurrent in\nhousehold\noutlets?</string>
+    <string name="activityNormalPhLevel10Ans1">Direct</string>
+    <string name="activityNormalPhLevel10Ans2">Alternating</string>+
+    <string name="activityNormalPhLevel10Ans3">Both</string>
+
+    <string name="activityNormalPhLevelWork11">Who formulated\nthe law of\ngravitation?</string>
+    <string name="activityNormalPhLevel11Ans1">Nikola\nTesla</string>
+    <string name="activityNormalPhLevel11Ans2">Isaac\nNewton</string>+
+    <string name="activityNormalPhLevel11Ans3">James\nMaxwell</string>
+    <string name="activityNormalPhLevel11Ans4">Galileo\nGalilei</string>
+
+    <string name="activityNormalPhLevelWork12">Speed of\nlight?</string>
+    <string name="activityNormalPhLevel12Ans1">180,000\nkm/s</string>
+    <string name="activityNormalPhLevel12Ans2">460,000\nkm/s</string>
+    <string name="activityNormalPhLevel12Ans3">300,000\nkm/s</string>+
+    <string name="activityNormalPhLevel12Ans4">250,000\nkm/s</string>
+
+    <string name="activityNormalPhLevelWork13">Unit of\nilluminance?</string>
+    <string name="activityNormalPhLevel13Ans1">Coulomb</string>
+    <string name="activityNormalPhLevel13Ans2">Lux</string>+
+    <string name="activityNormalPhLevel13Ans3">Photon</string>
+    <string name="activityNormalPhLevel13Ans4">Bar</string>
+
+    <string name="activityNormalPhLevelWork14">Is plasma\nan aggregate\nstate?</string>
+    <string name="activityNormalPhLevel14Ans1">Yes</string>+
+    <string name="activityNormalPhLevel14Ans2">No</string>
+
+    <string name="activityNormalPhLevelWork15">What\nis measured\nin Kelvin?</string>
+    <string name="activityNormalPhLevel15Ans1">Brightness</string>
+    <string name="activityNormalPhLevel15Ans2">Thermal conductivity</string>
+    <string name="activityNormalPhLevel15Ans3">Power</string>
+    <string name="activityNormalPhLevel15Ans4">Temperature</string>+
+    <string name="activityNormalPhLevelWork16">In which\nyear was\nthe first\nhuman spaceflight\nin the world?</string>
+    <string name="activityNormalPhLevel16Ans1">1961</string>+
+    <string name="activityNormalPhLevel16Ans2">1958</string>
+    <string name="activityNormalPhLevel16Ans3">1974</string>
+    <string name="activityNormalPhLevel16Ans4">1969</string>
+    <string name="activityNormalPhLevelWork17">Device\nfor\nmeasuring\nair humidity?</string>
+    <string name="activityNormalPhLevel17Ans1">Barometer</string>
+    <string name="activityNormalPhLevel17Ans2">Dynamometer</string>
+    <string name="activityNormalPhLevel17Ans3">Hygrometer</string>+
+    <string name="activityNormalPhLevel17Ans4">Hydrometer</string>
+    <string name="activityNormalPhLevelWork18">Device\nfor\nconverting\nenergy\nfrom mechanical\nto electrical?</string>
+    <string name="activityNormalPhLevel18Ans1">Battery</string>
+    <string name="activityNormalPhLevel18Ans2">Relay</string>
+    <string name="activityNormalPhLevel18Ans3">Engine</string>
+    <string name="activityNormalPhLevel18Ans4">Generator</string>+
+    <string name="activityNormalPhLevelWork19">Who\nreceived\nthe first\nNobel Prize\nin Physics?</string>
+    <string name="activityNormalPhLevel19Ans1">Wilhelm\nRöntgen</string>
+    <string name="activityNormalPhLevel19Ans2">Paul\nDirac</string>
+    <string name="activityNormalPhLevel19Ans3">Albert\nEinstein</string>
+    <string name="activityNormalPhLevel19Ans4">Nikola\nTesla</string>+
+    <string name="activityNormalPhLevelWork20">What\nis the\nfree fall\nacceleration\non Earth?</string>
+    <string name="activityNormalPhLevel20Ans1">10 m/s²</string>+
+    <string name="activityNormalPhLevel20Ans2">15 m/s²</string>
+    <string name="activityNormalPhLevel20Ans3">5 m/s²</string>
+    <string name="activityNormalPhLevel20Ans4">22 m/s²</string>
+
+    //All tasks related to Hard Physics Level!:
+    <string name="activityHardPhLevelWork1">At what\ntemperature\nwill a metal\nobject and\na wooden one\nappear\nequally heated?</string>
+    <string name="activityHardPhLevel1Ans1">At 0°C\n\n\n</string>
+    <string name="activityHardPhLevel1Ans2">At\nroom\ntemperature\n</string>
+    <string name="activityHardPhLevel1Ans3">At\nhuman body\ntemperature</string>+
+    <string name="activityHardPhLevel1Ans4">\nNo correct\nanswer\n</string>
+    <string name="activityHardPhLevelWork2">How\nis energy\ntransmitted\nfrom the Sun\nto Earth?</string>
+    <string name="activityHardPhLevel2Ans1">Convection\n</string>
+    <string name="activityHardPhLevel2Ans2">Radiation\n</string>+
+    <string name="activityHardPhLevel2Ans3">Thermal conduction\n</string>
+    <string name="activityHardPhLevel2Ans4">Work\nperformance</string>
+    <string name="activityHardPhLevelWork3">Which\nliquid\nis the\nlightest?</string>
+    <string name="activityHardPhLevel3Ans1">Liquid\nhydrogen</string>+
+    <string name="activityHardPhLevel3Ans2">Hydrogen\nperoxide</string>
+    <string name="activityHardPhLevel3Ans3">Cold\nwater</string>
+    <string name="activityHardPhLevel3Ans4">Liquid\nnitrogen</string>
+    <string name="activityHardPhLevelWork4">Who created\nthe first\nsteam engine?</string>
+    <string name="activityHardPhLevel4Ans1">Richard\nTrevithick</string>
+    <string name="activityHardPhLevel4Ans2">Denis\nPapin</string>+
+    <string name="activityHardPhLevel4Ans3">Oliver\nEvans</string>
+    <string name="activityHardPhLevel4Ans4">Ivan\nPolzunov</string>
+    <string name="activityHardPhLevelWork5">What\nfrequency\ndoes\nregular\ncity electricity\nhave?</string>
+    <string name="activityHardPhLevel5Ans1">50 Hz</string>+
+    <string name="activityHardPhLevel5Ans2">220 Hz</string>
+    <string name="activityHardPhLevel5Ans3">150 Hz</string>
+    <string name="activityHardPhLevel5Ans4">320 Hz</string>
+    <string name="activityHardPhLevelWork6">The smallest\nunit of\nenergy\nemitted by\nlight?</string>
+    <string name="activityHardPhLevel6Ans1">Atom</string>
+    <string name="activityHardPhLevel6Ans2">Quark</string>
+    <string name="activityHardPhLevel6Ans3">Particle</string>
+    <string name="activityHardPhLevel6Ans4">Quantum</string>+
+    <string name="activityHardPhLevelWork7">Who\ninvented\nthe first\ntelescope?</string>
+    <string name="activityHardPhLevel7Ans1">Gauss</string>
+    <string name="activityHardPhLevel7Ans2">Hippocrates</string>
+    <string name="activityHardPhLevel7Ans3">Copernicus</string>
+    <string name="activityHardPhLevel7Ans4">Galileo</string>+
+    <string name="activityHardPhLevelWork8">If a beam\npasses\nfrom water\ninto air,\nthe angle\nof refraction is...?</string>
+    <string name="activityHardPhLevel8Ans1">greater\nthan the\nangle of\nincidence</string>+
+    <string name="activityHardPhLevel8Ans2">less\nthan the\nangle of\nincidence</string>
+    <string name="activityHardPhLevel8Ans3">equal\nto the\nangle of\nincidence</string>
+    <string name="activityHardPhLevel8Ans4">equal\nto zero\n</string>
+    <string name="activityHardPhLevelWork9">What\nis called\na particle\nwithout a\ncharge?</string>
+    <string name="activityHardPhLevel9Ans1">Ion</string>
+    <string name="activityHardPhLevel9Ans2">Proton</string>
+    <string name="activityHardPhLevel9Ans3">Neutron</string>+
+    <string name="activityHardPhLevel9Ans4">Electron</string>
+    <string name="activityHardPhLevelWork10">The antiparticle\nof an electron\nis...?</string>
+    <string name="activityHardPhLevel10Ans1">muon</string>
+    <string name="activityHardPhLevel10Ans2">proton</string>
+    <string name="activityHardPhLevel10Ans3">pion</string>
+    <string name="activityHardPhLevel10Ans4">positron</string>+
+    <string name="activityHardPhLevelWork11">What\nis the\ntrajectory\nof light\nin a uniform\nmedium?</string>
+    <string name="activityHardPhLevel11Ans1">Parabola</string>
+    <string name="activityHardPhLevel11Ans2">Straight line</string>+
+    <string name="activityHardPhLevel11Ans3">Hyperbola</string>
+    <string name="activityHardPhLevel11Ans4">Curve</string>
+    <string name="activityHardPhLevelWork12">Transparent\nglass body\nbounded by\ntwo\nspherical surfaces?</string>
+    <string name="activityHardPhLevel12Ans1">Prism</string>
+    <string name="activityHardPhLevel12Ans2">Biprism</string>
+    <string name="activityHardPhLevel12Ans3">Lens</string>+
+    <string name="activityHardPhLevel12Ans4">Mirror</string>
+    <string name="activityHardPhLevelWork13">Atoms with\nthe same\ncharge but\ndifferent\nmasses\nare called...?</string>
+    <string name="activityHardPhLevel13Ans1">isobars</string>
+    <string name="activityHardPhLevel13Ans2">simple</string>
+    <string name="activityHardPhLevel13Ans3">compound</string>+
+    <string name="activityHardPhLevel13Ans4">isotopes</string>
+    <string name="activityHardPhLevelWork14">How to find\nthe heat\ncapacity\nof a body?</string>
+    <string name="activityHardPhLevel14Ans1">c*m</string>
+    <string name="activityHardPhLevel14Ans2">c*g</string>
+    <string name="activityHardPhLevel14Ans3">p*g*V</string>+
+    <string name="activityHardPhLevel14Ans4">m*a</string>
+    <string name="activityHardPhLevelWork15">Specific\nname for\nmeasuring\nthe volume\nof oil?</string>
+    <string name="activityHardPhLevel15Ans1">Ton</string>
+    <string name="activityHardPhLevel15Ans2">Liter</string>
+    <string name="activityHardPhLevel15Ans3">Barrel</string>+
+    <string name="activityHardPhLevel15Ans4">Gallon</string>
+    <string name="activityHardPhLevelWork16">What\nphenomenon\nis observed\nwhen coloring\na soap bubble?</string>
+    <string name="activityHardPhLevel16Ans1">Diffraction</string>
+    <string name="activityHardPhLevel16Ans2">Interference</string>+
+    <string name="activityHardPhLevel16Ans3">Refraction</string>
+    <string name="activityHardPhLevel16Ans4">Polarization</string>
+    <string name="activityHardPhLevelWork17">Which\nrays\ncause\ntanning\non human skin?</string>
+    <string name="activityHardPhLevel17Ans1">Gamma</string>
+    <string name="activityHardPhLevel17Ans2">Neutron</string>
+    <string name="activityHardPhLevel17Ans3">X-rays</string>
+    <string name="activityHardPhLevel17Ans4">Ultraviolet</string>+
+    <string name="activityHardPhLevelWork18">Does\nwater vapor\nappear as\nwhite clouds?</string>
+    <string name="activityHardPhLevel18Ans1">Yes</string>
+    <string name="activityHardPhLevel18Ans2">No</string>+
+    <string name="activityHardPhLevelWork19">Which\nparticles\nwere\ndiscovered\nfirst?</string>
+    <string name="activityHardPhLevel19Ans1">Quarks</string>
+    <string name="activityHardPhLevel19Ans2">Electrons</string>+
+    <string name="activityHardPhLevel19Ans3">Neutrons</string>
+    <string name="activityHardPhLevel19Ans4">Protons</string>
+    <string name="activityHardPhLevelWork20">Scientist\nafter whom\nthe unit\nof energy\nis named?</string>
+    <string name="activityHardPhLevel20Ans1">Joule</string>+
+    <string name="activityHardPhLevel20Ans2">Newton</string>
+    <string name="activityHardPhLevel20Ans3">Ampere</string>
+    <string name="activityHardPhLevel20Ans4">Lenz</string>
+
+    //All tasks related to Easy Biology Level!:
+    <string name="activityEasyBioLevelWork1">Who introduced\nthe concept\nof natural\nselection?</string>
+    <string name="activityEasyBioLevel1Ans1">Charles\nDarwin</string>+
+    <string name="activityEasyBioLevel1Ans2">Aristotle\n</string>
+    <string name="activityEasyBioLevel1Ans3">Carl\nLinnaeus</string>
+    <string name="activityEasyBioLevel1Ans4">Georges\nCuvier</string>
+    <string name="activityEasyBioLevelWork2">What\ndoes\nzoology\nstudy?</string>
+    <string name="activityEasyBioLevel2Ans1">Plants</string>
+    <string name="activityEasyBioLevel2Ans2">Animals</string>+
+    <string name="activityEasyBioLevel2Ans3">Fungi</string>
+    <string name="activityEasyBioLevel2Ans4">Bacteria</string>
+    <string name="activityEasyBioLevelWork3">Animals\nthat eat\nother animals\nand plants?</string>
+    <string name="activityEasyBioLevel3Ans1">Herbivores</string>
+    <string name="activityEasyBioLevel3Ans2">Producers</string>
+    <string name="activityEasyBioLevel3Ans3">Predators</string>
+    <string name="activityEasyBioLevel3Ans4">Omnivores</string>+
+    <string name="activityEasyBioLevelWork4">What\ndo gorillas\nunite into?</string>
+    <string name="activityEasyBioLevel4Ans1">Packs</string>
+    <string name="activityEasyBioLevel4Ans2">Prides</string>
+    <string name="activityEasyBioLevel4Ans3">Families</string>+
+    <string name="activityEasyBioLevel4Ans4">Herds</string>
+    <string name="activityEasyBioLevelWork5">Process of\nplants converting\nsunlight\ninto food?</string>
+    <string name="activityEasyBioLevel5Ans1">Chemosynthesis</string>
+    <string name="activityEasyBioLevel5Ans2">Mitosis</string>
+    <string name="activityEasyBioLevel5Ans3">Chlorophyll</string>
+    <string name="activityEasyBioLevel5Ans4">Photosynthesis</string>+
+    <string name="activityEasyBioLevelWork6">Is a crocodile\na warm-blooded\nanimal?</string>
+    <string name="activityEasyBioLevel6Ans1">True</string>
+    <string name="activityEasyBioLevel6Ans2">False</string>+
+    <string name="activityEasyBioLevelWork7">The largest\nmammal\non Earth?</string>
+    <string name="activityEasyBioLevel7Ans1">Elephant\n</string>
+    <string name="activityEasyBioLevel7Ans2">Buffalo\n</string>
+    <string name="activityEasyBioLevel7Ans3">Sperm whale\n</string>
+    <string name="activityEasyBioLevel7Ans4">Blue\nwhale</string>+
+    <string name="activityEasyBioLevelWork8">Which of\nthese animals\neats\neucalyptus leaves?</string>
+    <string name="activityEasyBioLevel8Ans1">Koalas</string>+
+    <string name="activityEasyBioLevel8Ans2">Sloths</string>
+    <string name="activityEasyBioLevel8Ans3">Loris</string>
+    <string name="activityEasyBioLevel8Ans4">Gibbon</string>
+    <string name="activityEasyBioLevelWork9">Which of\nthese mushrooms\nis poisonous?</string>
+    <string name="activityEasyBioLevel9Ans1">Saffron milk cap\n</string>
+    <string name="activityEasyBioLevel9Ans2">Thin pig\n</string>+
+    <string name="activityEasyBioLevel9Ans3">Polish mushroom</string>
+    <string name="activityEasyBioLevel9Ans4">Truffle\n</string>
+    <string name="activityEasyBioLevelWork10">The largest\nfreshwater\nfish?</string>
+    <string name="activityEasyBioLevel10Ans1">Sturgeon</string>
+    <string name="activityEasyBioLevel10Ans2">Beluga</string>+
+    <string name="activityEasyBioLevel10Ans3">Pike</string>
+    <string name="activityEasyBioLevel10Ans4">Catfish</string>
+    <string name="activityEasyBioLevelWork11">How many\nlegs do\na spider and\na scorpion\nhave together?</string>
+    <string name="activityEasyBioLevel11Ans1">16</string>+
+    <string name="activityEasyBioLevel11Ans2">14</string>
+    <string name="activityEasyBioLevel11Ans3">18</string>
+    <string name="activityEasyBioLevel11Ans4">12</string>
+    <string name="activityEasyBioLevelWork12">Which\nberry\nis the\nlargest?</string>
+    <string name="activityEasyBioLevel12Ans1">Strawberry</string>
+    <string name="activityEasyBioLevel12Ans2">Melon</string>
+    <string name="activityEasyBioLevel12Ans3">Watermelon</string>+
+    <string name="activityEasyBioLevel12Ans4">Orange</string>
+    <string name="activityEasyBioLevelWork13">The fastest\nland animal?</string>
+    <string name="activityEasyBioLevel13Ans1">Lion</string>
+    <string name="activityEasyBioLevel13Ans2">Cheetah</string>+
+    <string name="activityEasyBioLevel13Ans3">Jaguar</string>
+    <string name="activityEasyBioLevel13Ans4">Antelope</string>
+    <string name="activityEasyBioLevelWork14">Which\nsnake\nspits\nvenom?</string>
+    <string name="activityEasyBioLevel14Ans1">Asp</string>
+    <string name="activityEasyBioLevel14Ans2">Mamba</string>
+    <string name="activityEasyBioLevel14Ans3">Python</string>
+    <string name="activityEasyBioLevel14Ans4">Cobra</string>+
+    <string name="activityEasyBioLevelWork15">Which\ntree\nis the\ntallest?</string>
+    <string name="activityEasyBioLevel15Ans1">Sequoia</string>+
+    <string name="activityEasyBioLevel15Ans2">Eucalyptus</string>
+    <string name="activityEasyBioLevel15Ans3">Beech</string>
+    <string name="activityEasyBioLevel15Ans4">Baobab</string>
+    <string name="activityEasyBioLevelWork16">Do hedgehogs\nhibernate\nin winter?</string>
+    <string name="activityEasyBioLevel16Ans1">Yes</string>+
+    <string name="activityEasyBioLevel16Ans2">No</string>
+    <string name="activityEasyBioLevelWork17">The largest\nlizard\non Earth?</string>
+    <string name="activityEasyBioLevel17Ans1">Iguana</string>
+    <string name="activityEasyBioLevel17Ans2">Salamander</string>
+    <string name="activityEasyBioLevel17Ans3">Crocodile</string>
+    <string name="activityEasyBioLevel17Ans4">Monitor lizard</string>+
+    <string name="activityEasyBioLevelWork18">Which of\nthese birds\ncan fly?</string>
+    <string name="activityEasyBioLevel18Ans1">Ostrich</string>
+    <string name="activityEasyBioLevel18Ans2">Kiwi</string>
+    <string name="activityEasyBioLevel18Ans3">Penguin</string>
+    <string name="activityEasyBioLevel18Ans4">Condor</string>+
+    <string name="activityEasyBioLevelWork19">What\nsubstance\nis present\nin the\nexoskeleton\nof insects?</string>
+    <string name="activityEasyBioLevel19Ans1">Chlorophyll</string>
+    <string name="activityEasyBioLevel19Ans2">Chitin</string>+
+    <string name="activityEasyBioLevel19Ans3">Biotin</string>
+    <string name="activityEasyBioLevel19Ans4">Chloroplast</string>
+    <string name="activityEasyBioLevelWork20">What are\nthe spines\nof a cactus?</string>
+    <string name="activityEasyBioLevel20Ans1">Modified\nroots</string>
+    <string name="activityEasyBioLevel20Ans2">Modified\nleaves</string>+
+    <string name="activityEasyBioLevel20Ans3">Modified\nstems</string>
+
+    //All tasks related to Normal Biology Level!:
+    <string name="activityNormalBioLevelWork1">What is\nthe process\nof restoring\ndamaged\nbody parts\nof an animal\ncalled?</string>
+    <string name="activityNormalBioLevel1Ans1">Reincarnation</string>
+    <string name="activityNormalBioLevel1Ans2">Reintegration</string>
+    <string name="activityNormalBioLevel1Ans3">Regeneration</string>+
+    <string name="activityNormalBioLevel1Ans4">Remobilization</string>
+    <string name="activityNormalBioLevelWork2">Simultaneous\npresence\nof male\nand female\nsexual\ncharacteristics\nin an organism?</string>
+    <string name="activityNormalBioLevel2Ans1">Bisexuality</string>
+    <string name="activityNormalBioLevel2Ans2">Neutrality</string>
+    <string name="activityNormalBioLevel2Ans3">Heterotrophy</string>
+    <string name="activityNormalBioLevel2Ans4">Hermaphroditism</string>+
+    <string name="activityNormalBioLevelWork3">Which\nanimal\ndoes not\nbelong to\nthe class\nof cephalopods?</string>
+    <string name="activityNormalBioLevel3Ans1">Jellyfish</string>+
+    <string name="activityNormalBioLevel3Ans2">Cuttlefish</string>
+    <string name="activityNormalBioLevel3Ans3">Squid</string>
+    <string name="activityNormalBioLevel3Ans4">Octopus</string>
+    <string name="activityNormalBioLevelWork4">Organ of fish\nthat allows\nthem to detect\nthe direction\nand strength\nof water current?</string>
+    <string name="activityNormalBioLevel4Ans1">Notochord\n</string>
+    <string name="activityNormalBioLevel4Ans2">Gills\n</string>
+    <string name="activityNormalBioLevel4Ans3">Lateral line</string>+
+    <string name="activityNormalBioLevel4Ans4">Fins\n</string>
+    <string name="activityNormalBioLevelWork5">Branch\nof biology\nthat studies\nliving cells?</string>
+    <string name="activityNormalBioLevel5Ans1">Cellology</string>
+    <string name="activityNormalBioLevel5Ans2">Cytonomy</string>
+    <string name="activityNormalBioLevel5Ans3">Histology </string>
+    <string name="activityNormalBioLevel5Ans4">Cytology</string>+
+    <string name="activityNormalBioLevelWork6">How many\nbones does\nan adult\nhuman have?</string>
+    <string name="activityNormalBioLevel6Ans1">≈200</string>+
+    <string name="activityNormalBioLevel6Ans2">≈300</string>
+    <string name="activityNormalBioLevel6Ans3">≈150</string>
+    <string name="activityNormalBioLevel6Ans4">≈180</string>
+    <string name="activityNormalBioLevelWork7">Human blood\ncells that\nhave nuclei?</string>
+    <string name="activityNormalBioLevel7Ans1">Platelets</string>
+    <string name="activityNormalBioLevel7Ans2">Leukocytes</string>+
+    <string name="activityNormalBioLevel7Ans3">Erythrocytes</string>
+    <string name="activityNormalBioLevelWork8">Human vessels\nthrough which\nblood flows\nfrom the heart\nto organs\nand tissues?</string>
+    <string name="activityNormalBioLevel8Ans1">Pores</string>
+    <string name="activityNormalBioLevel8Ans2">Capillaries</string>
+    <string name="activityNormalBioLevel8Ans3">Arteries</string>+
+    <string name="activityNormalBioLevel8Ans4">Veins</string>
+    <string name="activityNormalBioLevelWork9">The smallest\norgan\nin humans?</string>
+    <string name="activityNormalBioLevel9Ans1">Spleen</string>
+    <string name="activityNormalBioLevel9Ans2">Pituitary gland</string>+
+    <string name="activityNormalBioLevel9Ans3">Kidney</string>
+    <string name="activityNormalBioLevel9Ans4">Trachea</string>
+    <string name="activityNormalBioLevelWork10">Protein molecules\nthat accelerate\nchemical reactions\nin the body?</string>
+    <string name="activityNormalBioLevel10Ans1">Enzymes</string>
+    <string name="activityNormalBioLevel10Ans2">Mitochondria</string>
+    <string name="activityNormalBioLevel10Ans3">Lysosomes</string>
+    <string name="activityNormalBioLevel10Ans4">Bile</string>
+    <string name="activityNormalBioLevelWork11">What color\nis the blood\nof mollusks?</string>
+    <string name="activityNormalBioLevel11Ans1">Red</string>
+    <string name="activityNormalBioLevel11Ans2">Orange</string>
+    <string name="activityNormalBioLevel11Ans3">Blue</string>
+    <string name="activityNormalBioLevel11Ans4">Light blue</string>+
+    <string name="activityNormalBioLevelWork12">Which\nflower\nopens\nonly at night?</string>
+    <string name="activityNormalBioLevel12Ans1">Orchid</string>
+    <string name="activityNormalBioLevel12Ans2">Tobacco</string>+
+    <string name="activityNormalBioLevel12Ans3">Azalea</string>
+    <string name="activityNormalBioLevel12Ans4">Coca</string>
+    <string name="activityNormalBioLevelWork13">Cnidarians\nbreathe\nthrough...?</string>
+    <string name="activityNormalBioLevel13Ans1">lungs\n</string>
+    <string name="activityNormalBioLevel13Ans2">gills\n</string>
+    <string name="activityNormalBioLevel13Ans3">body surface</string>
+    <string name="activityNormalBioLevelWork14">The causative agent\nof diphtheria\nis...?</string>
+    <string name="activityNormalBioLevel14Ans1">autotrophs</string>
+    <string name="activityNormalBioLevel14Ans2">saprotrophs</string>
+    <string name="activityNormalBioLevel14Ans3">parasites</string>+
+    <string name="activityNormalBioLevel14Ans4">symbionts</string>
+    <string name="activityNormalBioLevelWork15">Which\nhormone\nis produced\nby the pancreas?</string>
+    <string name="activityNormalBioLevel15Ans1">Progesterone</string>
+    <string name="activityNormalBioLevel15Ans2">Cortisol</string>
+    <string name="activityNormalBioLevel15Ans3">Estrogen</string>
+    <string name="activityNormalBioLevel15Ans4">Insulin</string>+
+    <string name="activityNormalBioLevelWork16">What\ndoes\nornithology\nstudy?</string>
+    <string name="activityNormalBioLevel16Ans1">Mammals</string>
+    <string name="activityNormalBioLevel16Ans2">Viruses</string>
+    <string name="activityNormalBioLevel16Ans3">Birds</string>+
+    <string name="activityNormalBioLevel16Ans4">Dinosaurs</string>
+    <string name="activityNormalBioLevelWork17">Identical\ntwins have\nthe same...?</string>
+    <string name="activityNormalBioLevel17Ans1">genotype</string>+
+    <string name="activityNormalBioLevel17Ans2">phenotype</string>
+    <string name="activityNormalBioLevel17Ans3">archetype</string>
+    <string name="activityNormalBioLevel17Ans4">prototype</string>
+    <string name="activityNormalBioLevelWork18">Which\nabbreviation\ndenotes\nenergy\nin a cell?</string>
+    <string name="activityNormalBioLevel18Ans1">ABC</string>
+    <string name="activityNormalBioLevel18Ans2">AZS</string>
+    <string name="activityNormalBioLevel18Ans3">ATP</string>+
+    <string name="activityNormalBioLevel18Ans4">LKM</string>
+    <string name="activityNormalBioLevelWork19">Which\nbird has\na tongue\ncovered\nwith spines?</string>
+    <string name="activityNormalBioLevel19Ans1">Ostrich</string>
+    <string name="activityNormalBioLevel19Ans2">Penguin</string>+
+    <string name="activityNormalBioLevel19Ans3">Parrot</string>
+    <string name="activityNormalBioLevel19Ans4">Owl</string>
+    <string name="activityNormalBioLevelWork20">Deficiency\nof which\nvitamin\ncauses\n"night blindness"?</string>
+    <string name="activityNormalBioLevel20Ans1">B12</string>
+    <string name="activityNormalBioLevel20Ans2">A</string>+
+    <string name="activityNormalBioLevel20Ans3">E</string>
+    <string name="activityNormalBioLevel20Ans4">D</string>
+
+    //All tasks related to Hard Biology Level!:
+    <string name="activityHardBioLevelWork1">Why\ndo horses\nsleep\nstanding up?</string>
+    <string name="activityHardBioLevel1Ans1">Strong\nlegs\n</string>
+    <string name="activityHardBioLevel1Ans2">Muscle\nendurance\n</string>
+    <string name="activityHardBioLevel1Ans3">Presence\nof a ligament\n</string>+
+    <string name="activityHardBioLevel1Ans4">Feature\nof brain\nfunction</string>
+    <string name="activityHardBioLevelWork2">Which\nof these\nhas a\nmulti-chambered\nstomach?</string>
+    <string name="activityHardBioLevel2Ans1">Camel</string>+
+    <string name="activityHardBioLevel2Ans2">Human</string>
+    <string name="activityHardBioLevel2Ans3">Rabbit</string>
+    <string name="activityHardBioLevel2Ans4">Dog</string>
+    <string name="activityHardBioLevelWork3">Do chickens\nhave a\nlymphatic\nsystem?</string>
+    <string name="activityHardBioLevel3Ans1">Yes</string>+
+    <string name="activityHardBioLevel3Ans2">No</string>
+    <string name="activityHardBioLevelWork4">Part\nof the brain\nresponsible\nfor\ncoordination?</string>
+    <string name="activityHardBioLevel4Ans1">Midbrain</string>
+    <string name="activityHardBioLevel4Ans2">Pons</string>
+    <string name="activityHardBioLevel4Ans3">Medulla oblongata</string>
+    <string name="activityHardBioLevel4Ans4">Cerebellum\n</string>+
+    <string name="activityHardBioLevelWork5">Organ\ncalled\nthe "graveyard\nof erythrocytes"?</string>
+    <string name="activityHardBioLevel5Ans1">Kidneys</string>
+    <string name="activityHardBioLevel5Ans2">Spleen</string>+
+    <string name="activityHardBioLevel5Ans3">Liver</string>
+    <string name="activityHardBioLevel5Ans4">Pancreas</string>
+    <string name="activityHardBioLevelWork6">Whose\nliver structure\nis similar\nto that\nof humans?</string>
+    <string name="activityHardBioLevel6Ans1">Pig</string>+
+    <string name="activityHardBioLevel6Ans2">Bear</string>
+    <string name="activityHardBioLevel6Ans3">Dog</string>
+    <string name="activityHardBioLevel6Ans4">Sheep</string>
+    <string name="activityHardBioLevelWork7">The somatic\nnervous system\ncontrols\nthe work of...?</string>
+    <string name="activityHardBioLevel7Ans1">heart and\nvessels</string>
+    <string name="activityHardBioLevel7Ans2">intestines\n</string>
+    <string name="activityHardBioLevel7Ans3">kidneys\n</string>
+    <string name="activityHardBioLevel7Ans4">skeletal\nmuscles</string>+
+    <string name="activityHardBioLevelWork8">Nuclei\nof the parasympathetic\ndivision\nof the nervous\nsystem are\nlocated in...?</string>
+    <string name="activityHardBioLevel8Ans1">\ncerebellum\n</string>
+    <string name="activityHardBioLevel8Ans2">\nmedulla oblongata</string>+
+    <string name="activityHardBioLevel8Ans3">cerebral\ncortex</string>
+    <string name="activityHardBioLevel8Ans4">\nheart\n</string>
+    <string name="activityHardBioLevelWork9">During\nmental work\nof the brain,\n... increases?</string>
+    <string name="activityHardBioLevel9Ans1">accumulation\nof insulin</string>
+    <string name="activityHardBioLevel9Ans2">plastic\nmetabolism</string>
+    <string name="activityHardBioLevel9Ans3">energy\nmetabolism</string>+
+    <string name="activityHardBioLevel9Ans4">formation\nof glycogen</string>
+    <string name="activityHardBioLevelWork10">What\ndoes the\nautonomic\nnervous system\nregulate?</string>
+    <string name="activityHardBioLevel10Ans1">Internal\norgans</string>+
+    <string name="activityHardBioLevel10Ans2">Abdominal\nmuscles</string>
+    <string name="activityHardBioLevel10Ans3">Limbs\n</string>
+    <string name="activityHardBioLevel10Ans4">Thorax</string>
+    <string name="activityHardBioLevelWork11">Short\nprocess\nof a nerve\ncell is called...?</string>
+    <string name="activityHardBioLevel11Ans1">dendrite</string>+
+    <string name="activityHardBioLevel11Ans2">synapse</string>
+    <string name="activityHardBioLevel11Ans3">neuron</string>
+    <string name="activityHardBioLevel11Ans4">axon</string>
+    <string name="activityHardBioLevelWork12">Organelle\nresponsible\nfor protein\nsynthesis?</string>
+    <string name="activityHardBioLevel12Ans1">Mitochondrion</string>
+    <string name="activityHardBioLevel12Ans2">Ribosome</string>+
+    <string name="activityHardBioLevel12Ans3">Vacuole</string>
+    <string name="activityHardBioLevel12Ans4">Nucleus</string>
+    <string name="activityHardBioLevelWork13">First\nstage\nof protein\nsynthesis?</string>
+    <string name="activityHardBioLevel13Ans1">Translation</string>
+    <string name="activityHardBioLevel13Ans2">Elongation</string>
+    <string name="activityHardBioLevel13Ans3">Dissimilation</string>
+    <string name="activityHardBioLevel13Ans4">Transcription</string>+
+    <string name="activityHardBioLevelWork14">In which\npart\nof the intestine\nare there\ncrypts?</string>
+    <string name="activityHardBioLevel14Ans1">Large\nintestine</string>+
+    <string name="activityHardBioLevel14Ans2">Small\nintestine</string>
+    <string name="activityHardBioLevelWork15">A handheld\nmagnifier\nwith 10x\nmagnification\nallows you\nto see?</string>
+    <string name="activityHardBioLevel15Ans1">Shape\nof protozoan\ncells</string>
+    <string name="activityHardBioLevel15Ans2">Nucleus\nof a plant\ncell</string>+
+    <string name="activityHardBioLevel15Ans3">Chloroplasts\nof a plant\ncell</string>
+    <string name="activityHardBioLevel15Ans4">Ribosomes\nof bacteria\n</string>
+    <string name="activityHardBioLevelWork16">Which\nsubstances\ngive bones\nelasticity?</string>
+    <string name="activityHardBioLevel16Ans1">Proteins</string>+
+    <string name="activityHardBioLevel16Ans2">Fats</string>
+    <string name="activityHardBioLevel16Ans3">Carbohydrates</string>
+    <string name="activityHardBioLevel16Ans4">Salts</string>
+    <string name="activityHardBioLevelWork17">Which\ncolor\nare retinal\ncones selectively\nsensitive to?</string>
+    <string name="activityHardBioLevel17Ans1">Gray</string>
+    <string name="activityHardBioLevel17Ans2">Black</string>
+    <string name="activityHardBioLevel17Ans3">Blue</string>+
+    <string name="activityHardBioLevel17Ans4">Yellow</string>
+    <string name="activityHardBioLevelWork18">In what\nform do\nsome bacteria\nsurvive in\npermafrost\nconditions?</string>
+    <string name="activityHardBioLevel18Ans1">Multiple\ncolonies</string>
+    <string name="activityHardBioLevel18Ans2">Symbiosis\nwith fungi</string>
+    <string name="activityHardBioLevel18Ans3">Vegetative\ncells</string>
+    <string name="activityHardBioLevel18Ans4">Spores\n</string>+
+    <string name="activityHardBioLevelWork19">Hereditary\ninformation\nin a plant\ncell is\ncontained in...</string>
+    <string name="activityHardBioLevel19Ans1">cytoplasm</string>
+    <string name="activityHardBioLevel19Ans2">nucleus</string>+
+    <string name="activityHardBioLevel19Ans3">chromosome</string>
+    <string name="activityHardBioLevel19Ans4">centrioles</string>
+    <string name="activityHardBioLevelWork20">Deficiency\nof vitamin\nD leads\nto the disease...?</string>
+    <string name="activityHardBioLevel20Ans1">scurvy\n</string>
+    <string name="activityHardBioLevel20Ans2">hypothyroidism\n</string>
+    <string name="activityHardBioLevel20Ans3">rickets\n</string>+
+    <string name="activityHardBioLevel20Ans4">Down syndrome</string>
+
+
+</resources>

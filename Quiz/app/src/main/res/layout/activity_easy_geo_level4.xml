@@ -68,91 +68,19 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/container1"
             android:layout_above="@+id/textMathEasyNumLvl1"
-            android:layout_margin="5sp"
-            android:layout_marginLeft="5sp"
-            android:layout_marginTop="10sp"
-            android:layout_marginRight="5sp"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="5dp"
             android:scrollbars="none">
 
-            <LinearLayout
+            <com.example.quiz.ui.view.ViewAnswers4
+                android:id="@+id/answerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                app:answer1="@string/activityEasyGeoLevel4Ans1"
+                app:answer2="@string/activityEasyGeoLevel4Ans2"
+                app:buttonsColor="@drawable/style_buttons_easy"
+                />
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:foregroundGravity="center"
-                        android:orientation="horizontal"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textGeoEasyAnsLvl4_1"
-                            android:layout_width="50sp"
-                            android:layout_height="75sp"
-                            android:layout_marginLeft="2sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="2sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/style_buttons_math_easy"
-                            android:gravity="center"
-                            android:text="@string/activityEasyGeoLevel4Ans1"
-                            android:textColor="@color/black"
-                            android:textSize="25sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textGeoEasyAnsLvl4_2"
-                            android:layout_width="50sp"
-                            android:layout_height="75sp"
-                            android:layout_marginLeft="2sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="2sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/style_buttons_math_easy"
-                            android:gravity="center"
-                            android:text="@string/activityEasyGeoLevel4Ans2"
-                            android:textColor="@color/black"
-                            android:textSize="25sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/textMonitorGeoEasyLvl4"
-                        android:layout_width="match_parent"
-                        android:layout_height="130sp"
-                        android:layout_marginLeft="2sp"
-                        android:layout_marginTop="10sp"
-                        android:layout_marginRight="2sp"
-                        android:layout_weight="1"
-                        android:background="@drawable/style_buttons_math_easy"
-                        android:gravity="center"
-                        android:textColor="@color/black"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:visibility="invisible" />
-
-                </LinearLayout>
-
-            </LinearLayout>
         </ScrollView>
 
         <TextView

@@ -1,43 +1,18 @@
 package com.example.quiz.system;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static com.example.quiz.Const.LVL_PH_EASY;
 
 import android.app.Dialog;
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Window;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.example.quiz.R;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel1;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel10;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel11;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel12;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel13;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel14;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel15;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel16;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel17;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel18;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel19;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel2;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel20;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel3;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel4;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel5;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel6;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel7;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel8;
-import com.example.quiz.geoLevelsEasy.EasyGeoLevel9;
 import com.example.quiz.phLevelsEasy.EasyPhLevel1;
 import com.example.quiz.phLevelsEasy.EasyPhLevel10;
 import com.example.quiz.phLevelsEasy.EasyPhLevel11;
@@ -58,31 +33,24 @@ import com.example.quiz.phLevelsEasy.EasyPhLevel6;
 import com.example.quiz.phLevelsEasy.EasyPhLevel7;
 import com.example.quiz.phLevelsEasy.EasyPhLevel8;
 import com.example.quiz.phLevelsEasy.EasyPhLevel9;
+import com.example.quiz.ui.activity.BaseActivity;
 
-public class ActivityPhEasy extends AppCompatActivity {
+public class ActivityPhEasy extends BaseActivity {
 
     private ImageView imageCloudPh1, imageCloudPh2;
     private TextView imageBack;
-    private long backPressedTime;
-    private Toast backToast;
     private TextView easyPhlevel1, easyPhlevel2, easyPhlevel3, easyPhlevel4, easyPhlevel5, easyPhlevel6, easyPhlevel7, easyPhlevel8, easyPhlevel9, easyPhlevel10, easyPhlevel11, easyPhlevel12, easyPhlevel13, easyPhlevel14, easyPhlevel15, easyPhlevel16, easyPhlevel17, easyPhlevel18, easyPhlevel19, easyPhlevel20;
     private Animation animationCloudPh1, animationCloudPh2;
     private ImageButton imageRestartEasyPh, imageDiagramEasyPh;
     private Dialog dialogPhEasyRestart, dialogPhEasyDiagram;
     private TextView PhlevelEasyRestartYes, PhlevelEasyRestartNo;
     private TextView decided, errors;
-    private boolean flag;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ph_level_easy);
         //Сохрание игры:
-        SharedPreferences save = getSharedPreferences("PhSave", MODE_PRIVATE);
-        final int level = save.getInt("PhLevel", 1);
-        //Установка нулевой анимации:
-        overridePendingTransition(0, 0);
-        Window window = getWindow();
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        final int level = getSp().getInt(LVL_PH_EASY, 1);
         //Диалоговое окно при нажатии на кнопку "restart":
         dialogPhEasyRestart = new Dialog(this);
         dialogPhEasyRestart.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -132,193 +100,90 @@ public class ActivityPhEasy extends AppCompatActivity {
         //Анимация облаков:
         animationCloudPh1 = AnimationUtils.loadAnimation(this, R.anim.anim_cloud_math1);
         animationCloudPh2 = AnimationUtils.loadAnimation(this, R.anim.anim_cloud_math2);
-        flag = false;
 
         //Переход на предыдущую страницу:
         imageBack.setOnClickListener(view -> {
-            Intent intent = new Intent(this, ActivityMenu.class);
-            startActivity(intent);
-            flag = true;
+            startLevel(ActivityMenu.class);
         });
         //Переход к уровню 1:
         easyPhlevel1.setOnClickListener(view -> {
-            if (level >= 1) {
-                Intent intent = new Intent(this, EasyPhLevel1.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 1) startLevel(EasyPhLevel1.class);
         });
         //Переход к уровню 2:
         easyPhlevel2.setOnClickListener(view -> {
-            if (level >= 2) {
-                Intent intent = new Intent(this, EasyPhLevel2.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 2) startLevel(EasyPhLevel2.class);
         });
         //Переход к уровню 3:
         easyPhlevel3.setOnClickListener(view -> {
-            if (level >= 3) {
-                Intent intent = new Intent(this, EasyPhLevel3.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 3) startLevel(EasyPhLevel3.class);
         });
         //Переход к уровню 4:
         easyPhlevel4.setOnClickListener(view -> {
-            if (level >= 4) {
-                Intent intent = new Intent(this, EasyPhLevel4.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 4) startLevel(EasyPhLevel4.class);
         });
         //Переход к уровню 5:
         easyPhlevel5.setOnClickListener(view -> {
-            if (level >= 5) {
-                Intent intent = new Intent(this, EasyPhLevel5.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 5) startLevel(EasyPhLevel5.class);
         });
         //Переход к уровню 6:
         easyPhlevel6.setOnClickListener(view -> {
-            if (level >= 6) {
-                Intent intent = new Intent(this, EasyPhLevel6.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 6) startLevel(EasyPhLevel6.class);
         });
         //Переход к уровню 7:
         easyPhlevel7.setOnClickListener(view -> {
-            if (level >= 7) {
-                Intent intent = new Intent(this, EasyPhLevel7.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 7) startLevel(EasyPhLevel7.class);
         });
         //Переход к уровню 8:
         easyPhlevel8.setOnClickListener(view -> {
-            if (level >= 8) {
-                Intent intent = new Intent(this, EasyPhLevel8.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 8) startLevel(EasyPhLevel8.class);
         });
         //Переход к уровню 9:
         easyPhlevel9.setOnClickListener(view -> {
-            if (level >= 9) {
-                Intent intent = new Intent(this, EasyPhLevel9.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 9) startLevel(EasyPhLevel9.class);
         });//Переход к уровню 10:
         easyPhlevel10.setOnClickListener(view -> {
-            if (level >= 10) {
-                Intent intent = new Intent(this, EasyPhLevel10.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 10) startLevel(EasyPhLevel10.class);
         });
         //Переход к уровню 11:
         easyPhlevel11.setOnClickListener(view -> {
-            if (level >= 11) {
-                Intent intent = new Intent(this, EasyPhLevel11.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 11) startLevel(EasyPhLevel11.class);
         });
         //Переход к уровню 12:
         easyPhlevel12.setOnClickListener(view -> {
-            if (level >= 12) {
-                Intent intent = new Intent(this, EasyPhLevel12.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 12) startLevel(EasyPhLevel12.class);
         });
         //Переход к уровню 13:
         easyPhlevel13.setOnClickListener(view -> {
-            if (level >= 13) {
-                Intent intent = new Intent(this, EasyPhLevel13.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 13) startLevel(EasyPhLevel13.class);
         });
         //Переход к уровню 14:
         easyPhlevel14.setOnClickListener(view -> {
-            if (level >= 14) {
-                Intent intent = new Intent(this, EasyPhLevel14.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 14) startLevel(EasyPhLevel14.class);
         });
         //Переход к уровню 15:
         easyPhlevel15.setOnClickListener(view -> {
-            if (level >= 15) {
-                Intent intent = new Intent(this, EasyPhLevel15.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 15) startLevel(EasyPhLevel15.class);
         });
         //Переход к уровню 16:
         easyPhlevel16.setOnClickListener(view -> {
-            if (level >= 16) {
-                Intent intent = new Intent(this, EasyPhLevel16.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 16) startLevel(EasyPhLevel16.class);
         });
         //Переход к уровню 17:
         easyPhlevel17.setOnClickListener(view -> {
-            if (level >= 17) {
-                Intent intent = new Intent(this, EasyPhLevel17.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 17) startLevel(EasyPhLevel17.class);
         });
         //Переход к уровню 18:
         easyPhlevel18.setOnClickListener(view -> {
-            if (level >= 18) {
-                Intent intent = new Intent(this, EasyPhLevel18.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 18) startLevel(EasyPhLevel18.class);
         });//Переход к уровню 19:
         easyPhlevel19.setOnClickListener(view -> {
-            if (level >= 19) {
-                Intent intent = new Intent(this, EasyPhLevel19.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 19) startLevel(EasyPhLevel19.class);
         });
         //Переход к уровню 20:
         easyPhlevel20.setOnClickListener(view -> {
-            if (level >= 20) {
-                Intent intent = new Intent(this, EasyPhLevel20.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 20) startLevel(EasyPhLevel20.class);
         });
-        final int [] numberOfLevel = {
+        final Integer [] numberOfLevel = {
                 R.id.EasyPhlevel1,
                 R.id.EasyPhlevel2,
                 R.id.EasyPhlevel3,
@@ -340,30 +205,18 @@ public class ActivityPhEasy extends AppCompatActivity {
                 R.id.EasyPhlevel19,
                 R.id.EasyPhlevel20,
         };
-        for (int i = 0; i < level; i++) {
-            TextView textView = findViewById(numberOfLevel[i]);
-            textView.setBackground(getDrawable(R.drawable.style_buttons_math_easy));
-            textView.setText(""+(i+1));
-        }
+
+        setLevelsGrid(LVL_PH_EASY, numberOfLevel, R.drawable.style_buttons_easy);
+
         imageRestartEasyPh.setOnClickListener(view -> {
             dialogPhEasyRestart.show();
         });
         PhlevelEasyRestartYes.setOnClickListener(view -> {
-            Intent intent = new Intent(this, ActivityPhEasy.class);
             if (level > 1) {
-                SharedPreferences.Editor editor = save.edit();
-                editor.putInt("PhLevel", 1);
-                editor.putInt("PhLevelFalse", 0);
-                editor.commit();
-                for (int i = 1; i < level; i++) {
-                    TextView textView = findViewById(numberOfLevel[i]);
-                    textView.setBackground(getDrawable(R.drawable.style_buttons_not_pass));
-                    textView.setText("X");
-                }
-                dialogPhEasyRestart.dismiss();
-                flag = true;
-                startActivity(intent);
+                resetLevels(LVL_PH_EASY, numberOfLevel, R.drawable.style_buttons_not_pass);
+                startLevel(ActivityPhEasy.class);
             }
+            dialogPhEasyRestart.dismiss();
         });
         PhlevelEasyRestartNo.setOnClickListener(view -> {
             dialogPhEasyRestart.dismiss();
@@ -375,48 +228,13 @@ public class ActivityPhEasy extends AppCompatActivity {
             } else  {
                 decided.setText(String.valueOf(level-1));
             }
-            errors.setText(String.valueOf(save.getInt("PhLevelFalse", 0)));
+            errors.setText(getAllErrorForLevel(LVL_PH_EASY));
         });
-
     }
-
-    @Override
-    public void overridePendingTransition(int enterAnim, int exitAnim) {
-        super.overridePendingTransition(enterAnim, exitAnim);
-    }
-
     @Override
     protected void onResume() {
         super.onResume();
         imageCloudPh1.startAnimation(animationCloudPh1);
         imageCloudPh2.startAnimation(animationCloudPh2);
-        ///////////////////////////////////////////
-        //работа с музыкой
-        SharedPreferences saveAAA = getSharedPreferences("AAA", MODE_PRIVATE);
-        if (saveAAA.getInt("AAA", 1) == 0) {
-        } else {
-            startService(new Intent(this, MyService.class));
-        }
-        ///////////////////////////////////////////
-    }
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (flag == false) {
-            stopService(new Intent(this, MyService.class));
-        }
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (backPressedTime + 2000 > System.currentTimeMillis()) {
-            backToast.cancel();
-            super.onBackPressed();
-            return;
-        } else {
-            backToast = Toast.makeText(getBaseContext(), "Нажмите еще раз, чтобы выйти", Toast.LENGTH_SHORT);
-            backToast.show();
-        }
-        backPressedTime = System.currentTimeMillis();
     }
 }

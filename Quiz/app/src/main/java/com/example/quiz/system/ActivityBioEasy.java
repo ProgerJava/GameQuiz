@@ -1,21 +1,17 @@
 package com.example.quiz.system;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static com.example.quiz.Const.LVL_BIO_EASY;
 
 import android.app.Dialog;
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Window;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.quiz.R;
 import com.example.quiz.bioLevelsEasy.EasyBioLevel1;
@@ -38,31 +34,24 @@ import com.example.quiz.bioLevelsEasy.EasyBioLevel6;
 import com.example.quiz.bioLevelsEasy.EasyBioLevel7;
 import com.example.quiz.bioLevelsEasy.EasyBioLevel8;
 import com.example.quiz.bioLevelsEasy.EasyBioLevel9;
+import com.example.quiz.ui.activity.BaseActivity;
 
-public class ActivityBioEasy extends AppCompatActivity {
+public class ActivityBioEasy extends BaseActivity {
 
     private ImageView imageCloudBio1, imageCloudBio2;
     private TextView imageBack;
-    private long backPressedTime;
-    private Toast backToast;
     private TextView easyBiolevel1, easyBiolevel2, easyBiolevel3, easyBiolevel4, easyBiolevel5, easyBiolevel6, easyBiolevel7, easyBiolevel8, easyBiolevel9, easyBiolevel10, easyBiolevel11, easyBiolevel12, easyBiolevel13, easyBiolevel14, easyBiolevel15, easyBiolevel16, easyBiolevel17, easyBiolevel18, easyBiolevel19, easyBiolevel20;
     private Animation animationCloudBio1, animationCloudBio2;
     private ImageButton imageRestartEasyBio, imageDiagramEasyBio;
     private Dialog dialogBioEasyRestart, dialogBioEasyDiagram;
     private TextView BiolevelEasyRestartYes, BiolevelEasyRestartNo;
     private TextView decided, errors;
-    private boolean flag;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bio_level_easy);
         //Сохрание игры:
-        SharedPreferences save = getSharedPreferences("BioSave", MODE_PRIVATE);
-        final int level = save.getInt("BioLevel", 1);
-        //Установка нулевой анимации:
-        overridePendingTransition(0, 0);
-        Window window = getWindow();
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        final int level = getSp().getInt(LVL_BIO_EASY, 1);
         //Диалоговое окно при нажатии на кнопку "restart":
         dialogBioEasyRestart = new Dialog(this);
         dialogBioEasyRestart.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -112,192 +101,90 @@ public class ActivityBioEasy extends AppCompatActivity {
         //Анимация облаков:
         animationCloudBio1 = AnimationUtils.loadAnimation(this, R.anim.anim_cloud_math1);
         animationCloudBio2 = AnimationUtils.loadAnimation(this, R.anim.anim_cloud_math2);
-        flag = false;
         //Переход на предыдущую страницу:
         imageBack.setOnClickListener(view -> {
-            Intent intent = new Intent(this, ActivityMenu.class);
-            startActivity(intent);
-            flag = true;
+            startLevel(ActivityMenu.class);
         });
         //Переход к уровню 1:
         easyBiolevel1.setOnClickListener(view -> {
-            if (level >= 1) {
-                Intent intent = new Intent(this, EasyBioLevel1.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 1) startLevel(EasyBioLevel1.class);
         });
         //Переход к уровню 2:
         easyBiolevel2.setOnClickListener(view -> {
-            if (level >= 2) {
-                Intent intent = new Intent(this, EasyBioLevel2.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 2) startLevel(EasyBioLevel2.class);
         });
         //Переход к уровню 3:
         easyBiolevel3.setOnClickListener(view -> {
-            if (level >= 3) {
-                Intent intent = new Intent(this, EasyBioLevel3.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 3) startLevel(EasyBioLevel3.class);
         });
         //Переход к уровню 4:
         easyBiolevel4.setOnClickListener(view -> {
-            if (level >= 4) {
-                Intent intent = new Intent(this, EasyBioLevel4.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 4) startLevel(EasyBioLevel4.class);
         });
         //Переход к уровню 5:
         easyBiolevel5.setOnClickListener(view -> {
-            if (level >= 5) {
-                Intent intent = new Intent(this, EasyBioLevel5.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 5) startLevel(EasyBioLevel5.class);
         });
         //Переход к уровню 6:
         easyBiolevel6.setOnClickListener(view -> {
-            if (level >= 6) {
-                Intent intent = new Intent(this, EasyBioLevel6.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 6) startLevel(EasyBioLevel6.class);
         });
         //Переход к уровню 7:
         easyBiolevel7.setOnClickListener(view -> {
-            if (level >= 7) {
-                Intent intent = new Intent(this, EasyBioLevel7.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 7) startLevel(EasyBioLevel7.class);
         });
         //Переход к уровню 8:
         easyBiolevel8.setOnClickListener(view -> {
-            if (level >= 8) {
-                Intent intent = new Intent(this, EasyBioLevel8.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 8) startLevel(EasyBioLevel8.class);
         });
         //Переход к уровню 9:
         easyBiolevel9.setOnClickListener(view -> {
-            if (level >= 9) {
-                Intent intent = new Intent(this, EasyBioLevel9.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 9) startLevel(EasyBioLevel9.class);
         });//Переход к уровню 10:
         easyBiolevel10.setOnClickListener(view -> {
-            if (level >= 10) {
-                Intent intent = new Intent(this, EasyBioLevel10.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 10) startLevel(EasyBioLevel10.class);
         });
         //Переход к уровню 11:
         easyBiolevel11.setOnClickListener(view -> {
-            if (level >= 11) {
-                Intent intent = new Intent(this, EasyBioLevel11.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 11) startLevel(EasyBioLevel11.class);
         });
         //Переход к уровню 12:
         easyBiolevel12.setOnClickListener(view -> {
-            if (level >= 12) {
-                Intent intent = new Intent(this, EasyBioLevel12.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 12) startLevel(EasyBioLevel12.class);
         });
         //Переход к уровню 13:
         easyBiolevel13.setOnClickListener(view -> {
-            if (level >= 13) {
-                Intent intent = new Intent(this, EasyBioLevel13.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 13) startLevel(EasyBioLevel13.class);
         });
         //Переход к уровню 14:
         easyBiolevel14.setOnClickListener(view -> {
-            if (level >= 14) {
-                Intent intent = new Intent(this, EasyBioLevel14.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 14) startLevel(EasyBioLevel14.class);
         });
         //Переход к уровню 15:
         easyBiolevel15.setOnClickListener(view -> {
-            if (level >= 15) {
-                Intent intent = new Intent(this, EasyBioLevel15.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 15) startLevel(EasyBioLevel15.class);
         });
         //Переход к уровню 16:
         easyBiolevel16.setOnClickListener(view -> {
-            if (level >= 16) {
-                Intent intent = new Intent(this, EasyBioLevel16.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 16) startLevel(EasyBioLevel16.class);
         });
         //Переход к уровню 17:
         easyBiolevel17.setOnClickListener(view -> {
-            if (level >= 17) {
-                Intent intent = new Intent(this, EasyBioLevel17.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 17) startLevel(EasyBioLevel17.class);
         });
         //Переход к уровню 18:
         easyBiolevel18.setOnClickListener(view -> {
-            if (level >= 18) {
-                Intent intent = new Intent(this, EasyBioLevel18.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 18) startLevel(EasyBioLevel18.class);
         });//Переход к уровню 19:
         easyBiolevel19.setOnClickListener(view -> {
-            if (level >= 19) {
-                Intent intent = new Intent(this, EasyBioLevel19.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 19) startLevel(EasyBioLevel19.class);
         });
         //Переход к уровню 20:
         easyBiolevel20.setOnClickListener(view -> {
-            if (level >= 20) {
-                Intent intent = new Intent(this, EasyBioLevel20.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 20) startLevel(EasyBioLevel20.class);
         });
-        final int [] numberOfLevel = {
+
+        final Integer [] numberOfLevel = {
                 R.id.EasyBiolevel1,
                 R.id.EasyBiolevel2,
                 R.id.EasyBiolevel3,
@@ -319,30 +206,18 @@ public class ActivityBioEasy extends AppCompatActivity {
                 R.id.EasyBiolevel19,
                 R.id.EasyBiolevel20,
         };
-        for (int i = 0; i < level; i++) {
-            TextView textView = findViewById(numberOfLevel[i]);
-            textView.setBackground(getDrawable(R.drawable.style_buttons_math_easy));
-            textView.setText(""+(i+1));
-        }
+
+        setLevelsGrid(LVL_BIO_EASY, numberOfLevel, R.drawable.style_buttons_easy);
+
         imageRestartEasyBio.setOnClickListener(view -> {
             dialogBioEasyRestart.show();
         });
         BiolevelEasyRestartYes.setOnClickListener(view -> {
-            Intent intent = new Intent(this, ActivityBioEasy.class);
             if (level > 1) {
-                SharedPreferences.Editor editor = save.edit();
-                editor.putInt("BioLevel", 1);
-                editor.putInt("BioLevelFalse", 0);
-                editor.commit();
-                for (int i = 1; i < level; i++) {
-                    TextView textView = findViewById(numberOfLevel[i]);
-                    textView.setBackground(getDrawable(R.drawable.style_buttons_not_pass));
-                    textView.setText("X");
-                }
-                dialogBioEasyRestart.dismiss();
-                flag = true;
-                startActivity(intent);
+                resetLevels(LVL_BIO_EASY, numberOfLevel, R.drawable.style_buttons_not_pass);
+                startLevel(ActivityBioEasy.class);
             }
+            dialogBioEasyRestart.dismiss();
         });
         BiolevelEasyRestartNo.setOnClickListener(view -> {
             dialogBioEasyRestart.dismiss();
@@ -354,14 +229,9 @@ public class ActivityBioEasy extends AppCompatActivity {
             } else  {
                 decided.setText(String.valueOf(level-1));
             }
-            errors.setText(String.valueOf(save.getInt("BioLevelFalse", 0)));
+            errors.setText(getAllErrorForLevel(LVL_BIO_EASY));
         });
 
-    }
-
-    @Override
-    public void overridePendingTransition(int enterAnim, int exitAnim) {
-        super.overridePendingTransition(enterAnim, exitAnim);
     }
 
     @Override
@@ -369,33 +239,5 @@ public class ActivityBioEasy extends AppCompatActivity {
         super.onResume();
         imageCloudBio1.startAnimation(animationCloudBio1);
         imageCloudBio2.startAnimation(animationCloudBio2);
-        ///////////////////////////////////////////
-        //работа с музыкой
-        SharedPreferences saveAAA = getSharedPreferences("AAA", MODE_PRIVATE);
-        if (saveAAA.getInt("AAA", 1) == 0) {
-        } else {
-            startService(new Intent(this, MyService.class));
-        }
-        ///////////////////////////////////////////
-    }
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (flag == false) {
-            stopService(new Intent(this, MyService.class));
-        }
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (backPressedTime + 2000 > System.currentTimeMillis()) {
-            backToast.cancel();
-            super.onBackPressed();
-            return;
-        } else {
-            backToast = Toast.makeText(getBaseContext(), "Нажмите еще раз, чтобы выйти", Toast.LENGTH_SHORT);
-            backToast.show();
-        }
-        backPressedTime = System.currentTimeMillis();
     }
 }

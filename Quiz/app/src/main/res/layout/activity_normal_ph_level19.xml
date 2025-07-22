@@ -39,7 +39,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/imageBackNormalGeo"
+                    android:id="@+id/imageBack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
@@ -92,124 +92,21 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/textMathNormalNumLvl1"
             android:layout_below="@+id/container1"
-            android:layout_marginStart="5sp"
-            android:layout_marginLeft="5sp"
-            android:layout_marginTop="5sp"
-            android:layout_marginEnd="5sp"
-            android:layout_marginRight="5sp"
-            android:layout_marginBottom="5sp"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
             android:scrollbars="none">
 
-            <LinearLayout
+            <com.example.quiz.ui.view.ViewAnswers4
+                android:id="@+id/answerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                app:answer1="@string/activityNormalPhLevel19Ans1"
+                app:answer2="@string/activityNormalPhLevel19Ans2"
+                app:answer3="@string/activityNormalPhLevel19Ans3"
+                app:answer4="@string/activityNormalPhLevel19Ans4"
+                app:buttonsColor="@drawable/style_buttons_normal"
+                />
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:foregroundGravity="center"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/activityNormalPhLevel19Ans1"
-                            android:layout_width="50sp"
-                            android:layout_height="75sp"
-                            android:layout_marginLeft="2sp"
-                            android:layout_marginTop="20sp"
-                            android:layout_marginRight="2sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/style_buttons_math_normal"
-                            android:gravity="center"
-                            android:text="@string/activityNormalPhLevel19Ans1"
-                            android:textColor="@color/black"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/activityNormalPhLevel19Ans2"
-                            android:layout_width="50sp"
-                            android:layout_height="75sp"
-                            android:layout_marginLeft="2sp"
-                            android:layout_marginTop="20sp"
-                            android:layout_marginRight="2sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/style_buttons_math_normal"
-                            android:gravity="center"
-                            android:text="@string/activityNormalPhLevel19Ans2"
-                            android:textColor="@color/black"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/activityNormalPhLevel19Ans3"
-                            android:layout_width="50sp"
-                            android:layout_height="75sp"
-                            android:layout_marginLeft="2sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="2sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/style_buttons_math_normal"
-                            android:gravity="center"
-                            android:text="@string/activityNormalPhLevel19Ans3"
-                            android:textColor="@color/black"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/activityNormalPhLevel19Ans4"
-                            android:layout_width="50sp"
-                            android:layout_height="75sp"
-                            android:layout_marginLeft="2sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="2sp"
-                            android:layout_weight="1"
-                            android:background="@drawable/style_buttons_math_normal"
-                            android:gravity="center"
-                            android:text="@string/activityNormalPhLevel19Ans4"
-                            android:textColor="@color/black"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/textMonitorPhNormalLvl19"
-                        android:layout_width="match_parent"
-                        android:layout_height="110sp"
-                        android:layout_marginLeft="2sp"
-                        android:layout_marginTop="10sp"
-                        android:layout_marginRight="2sp"
-                        android:layout_weight="1"
-                        android:background="@drawable/style_buttons_math_normal"
-                        android:gravity="center"
-                        android:textColor="@color/black"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:visibility="invisible" />
-
-                </LinearLayout>
-
-            </LinearLayout>
         </ScrollView>
 
         <TextView

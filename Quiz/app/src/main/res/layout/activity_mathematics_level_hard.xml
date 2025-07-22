@@ -117,7 +117,7 @@
                         android:layout_marginLeft="1sp"
                         android:layout_marginRight="1sp"
                         android:layout_weight="1"
-                        android:background="@drawable/style_buttons_math_hard"
+                        android:background="@drawable/style_buttons_hard"
                         android:gravity="center"
                         android:text="@string/level1"
                         android:textColor="@color/black"

@@ -1,19 +1,14 @@
 package com.example.quiz.system;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static com.example.quiz.Const.LVL_BIO_NORMAL;
 
 import android.app.Dialog;
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.example.quiz.R;
 import com.example.quiz.bioLevelsNormal.NormalBioLevel1;
 import com.example.quiz.bioLevelsNormal.NormalBioLevel10;
@@ -35,48 +30,22 @@ import com.example.quiz.bioLevelsNormal.NormalBioLevel6;
 import com.example.quiz.bioLevelsNormal.NormalBioLevel7;
 import com.example.quiz.bioLevelsNormal.NormalBioLevel8;
 import com.example.quiz.bioLevelsNormal.NormalBioLevel9;
-import com.example.quiz.phLevelsNormal.NormalPhLevel1;
-import com.example.quiz.phLevelsNormal.NormalPhLevel10;
-import com.example.quiz.phLevelsNormal.NormalPhLevel11;
-import com.example.quiz.phLevelsNormal.NormalPhLevel12;
-import com.example.quiz.phLevelsNormal.NormalPhLevel13;
-import com.example.quiz.phLevelsNormal.NormalPhLevel14;
-import com.example.quiz.phLevelsNormal.NormalPhLevel15;
-import com.example.quiz.phLevelsNormal.NormalPhLevel16;
-import com.example.quiz.phLevelsNormal.NormalPhLevel17;
-import com.example.quiz.phLevelsNormal.NormalPhLevel18;
-import com.example.quiz.phLevelsNormal.NormalPhLevel19;
-import com.example.quiz.phLevelsNormal.NormalPhLevel2;
-import com.example.quiz.phLevelsNormal.NormalPhLevel20;
-import com.example.quiz.phLevelsNormal.NormalPhLevel3;
-import com.example.quiz.phLevelsNormal.NormalPhLevel4;
-import com.example.quiz.phLevelsNormal.NormalPhLevel5;
-import com.example.quiz.phLevelsNormal.NormalPhLevel6;
-import com.example.quiz.phLevelsNormal.NormalPhLevel7;
-import com.example.quiz.phLevelsNormal.NormalPhLevel8;
-import com.example.quiz.phLevelsNormal.NormalPhLevel9;
+import com.example.quiz.ui.activity.BaseActivity;
 
-public class ActivityBioNormal extends AppCompatActivity {
+public class ActivityBioNormal extends BaseActivity {
 
     private TextView imageBack;
-    private long backPressedTime;
-    private Toast backToast;
     private TextView normalBiolevel1, normalBiolevel2, normalBiolevel3, normalBiolevel4, normalBiolevel5, normalBiolevel6, normalBiolevel7, normalBiolevel8, normalBiolevel9, normalBiolevel10, normalBiolevel11, normalBiolevel12, normalBiolevel13, normalBiolevel14, normalBiolevel15, normalBiolevel16, normalBiolevel17, normalBiolevel18, normalBiolevel19, normalBiolevel20;
     private ImageButton imageRestartNormalBio, imageDiagramNormalBio;
     private Dialog dialogBioNormalRestart, dialogBioNormalDiagram;
     private TextView BiolevelNormalRestartYes, BiolevelNormalRestartNo;
     private TextView decided, errors;
-    private boolean flag;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bio_normal);
-        //Установка нулевой анимации:
-        overridePendingTransition(0, 0);
-        Window window = getWindow();
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);//Сохрание игры:
-        SharedPreferences save1 = getSharedPreferences("BioSaveNormal", MODE_PRIVATE);
-        final int level = save1.getInt("BioLevelNormal", 1);
+        final int level = getSp().getInt(LVL_BIO_NORMAL, 1);
         //Диалоговое окно при нажатии на кнопку "restart":
         dialogBioNormalRestart = new Dialog(this);
         dialogBioNormalRestart.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -119,193 +88,90 @@ public class ActivityBioNormal extends AppCompatActivity {
         //Кнопка "Статистика" и "Рестарт":
         imageRestartNormalBio = findViewById(R.id.imageRestartNormalBio);
         imageDiagramNormalBio = findViewById(R.id.imageDiagramNormalBio);
-        flag = false;
         //Переход на предыдущую страницу:
         imageBack.setOnClickListener(view -> {
-            Intent intent = new Intent(this, ActivityMenu.class);
-            startActivity(intent);
-            flag = true;
+            startLevel(ActivityMenu.class);
         });
         //Переход к уровню 1:
         normalBiolevel1.setOnClickListener(view -> {
-            if (level >= 1) {
-                Intent intent = new Intent(this, NormalBioLevel1.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 1) startLevel(NormalBioLevel1.class);
         });
         //Переход к уровню 2:
         normalBiolevel2.setOnClickListener(view -> {
-            if (level >= 2) {
-                Intent intent = new Intent(this, NormalBioLevel2.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 2) startLevel(NormalBioLevel2.class);
         });
         //Переход к уровню 3:
         normalBiolevel3.setOnClickListener(view -> {
-            if (level >= 3) {
-                Intent intent = new Intent(this, NormalBioLevel3.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 3) startLevel(NormalBioLevel3.class);
         });
         //Переход к уровню 4:
         normalBiolevel4.setOnClickListener(view -> {
-            if (level >= 4) {
-                Intent intent = new Intent(this, NormalBioLevel4.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 4) startLevel(NormalBioLevel4.class);
         });
         //Переход к уровню 5:
         normalBiolevel5.setOnClickListener(view -> {
-            if (level >= 5) {
-                Intent intent = new Intent(this, NormalBioLevel5.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 5) startLevel(NormalBioLevel5.class);
         });
         //Переход к уровню 6:
         normalBiolevel6.setOnClickListener(view -> {
-            if (level >= 6) {
-                Intent intent = new Intent(this, NormalBioLevel6.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 6) startLevel(NormalBioLevel6.class);
         });
         //Переход к уровню 7:
         normalBiolevel7.setOnClickListener(view -> {
-            if (level >= 7) {
-                Intent intent = new Intent(this, NormalBioLevel7.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 7) startLevel(NormalBioLevel7.class);
         });
         //Переход к уровню 8:
         normalBiolevel8.setOnClickListener(view -> {
-            if (level >= 8) {
-                Intent intent = new Intent(this, NormalBioLevel8.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 8) startLevel(NormalBioLevel8.class);
         });
         //Переход к уровню 9:
         normalBiolevel9.setOnClickListener(view -> {
-            if (level >= 9) {
-                Intent intent = new Intent(this, NormalBioLevel9.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 9) startLevel(NormalBioLevel9.class);
         });//Переход к уровню 10:
         normalBiolevel10.setOnClickListener(view -> {
-            if (level >= 10) {
-                Intent intent = new Intent(this, NormalBioLevel10.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 10) startLevel(NormalBioLevel10.class);
         });
         //Переход к уровню 11:
         normalBiolevel11.setOnClickListener(view -> {
-            if (level >= 11) {
-                Intent intent = new Intent(this, NormalBioLevel11.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 11) startLevel(NormalBioLevel11.class);
         });
         //Переход к уровню 12:
         normalBiolevel12.setOnClickListener(view -> {
-            if (level >= 12) {
-                Intent intent = new Intent(this, NormalBioLevel12.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 12) startLevel(NormalBioLevel12.class);
         });
         //Переход к уровню 13:
         normalBiolevel13.setOnClickListener(view -> {
-            if (level >= 13) {
-                Intent intent = new Intent(this, NormalBioLevel13.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 13) startLevel(NormalBioLevel13.class);
         });
         //Переход к уровню 14:
         normalBiolevel14.setOnClickListener(view -> {
-            if (level >= 14) {
-                Intent intent = new Intent(this, NormalBioLevel14.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 14) startLevel(NormalBioLevel14.class);
         });
         //Переход к уровню 15:
         normalBiolevel15.setOnClickListener(view -> {
-            if (level >= 15) {
-                Intent intent = new Intent(this, NormalBioLevel15.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 15) startLevel(NormalBioLevel15.class);
         });
         //Переход к уровню 16:
         normalBiolevel16.setOnClickListener(view -> {
-            if (level >= 16) {
-                Intent intent = new Intent(this, NormalBioLevel16.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 16) startLevel(NormalBioLevel16.class);
         });
         //Переход к уровню 17:
         normalBiolevel17.setOnClickListener(view -> {
-            if (level >= 17) {
-                Intent intent = new Intent(this, NormalBioLevel17.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 17) startLevel(NormalBioLevel17.class);
         });
         //Переход к уровню 18:
         normalBiolevel18.setOnClickListener(view -> {
-            if (level >= 18) {
-                Intent intent = new Intent(this, NormalBioLevel18.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 18) startLevel(NormalBioLevel18.class);
         });//Переход к уровню 19:
         normalBiolevel19.setOnClickListener(view -> {
-            if (level >= 19) {
-                Intent intent = new Intent(this, NormalBioLevel19.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 19) startLevel(NormalBioLevel19.class);
         });
         //Переход к уровню 20:
         normalBiolevel20.setOnClickListener(view -> {
-            if (level >= 20) {
-                Intent intent = new Intent(this, NormalBioLevel20.class);
-                startActivity(intent);flag = true;
-            } else {
-
-            }
+            if (level >= 20) startLevel(NormalBioLevel20.class);
         });
 
-        final int [] numberOfLevel = {
+        final Integer [] numberOfLevel = {
                 R.id.NormalBiolevel1,
                 R.id.NormalBiolevel2,
                 R.id.NormalBiolevel3,
@@ -327,31 +193,19 @@ public class ActivityBioNormal extends AppCompatActivity {
                 R.id.NormalBiolevel19,
                 R.id.NormalBiolevel20,
         };
-        for (int i = 0; i < level; i++) {
-            TextView textView = findViewById(numberOfLevel[i]);
-            textView.setBackground(getDrawable(R.drawable.style_buttons_math_normal));
-            textView.setText(""+(i+1));
-        }
+
+        setLevelsGrid(LVL_BIO_NORMAL, numberOfLevel, R.drawable.style_buttons_normal);
+
         imageRestartNormalBio.setOnClickListener(view -> {
             dialogBioNormalRestart.show();
         });
 
         BiolevelNormalRestartYes.setOnClickListener(view -> {
-            Intent intent = new Intent(this, ActivityBioNormal.class);
             if (level > 1) {
-                SharedPreferences.Editor editor = save1.edit();
-                editor.putInt("BioLevelNormal", 1);
-                editor.putInt("BioLevelFalseNormal", 0);
-                editor.commit();
-                for (int i = 1; i < level; i++) {
-                    TextView textView = findViewById(numberOfLevel[i]);
-                    textView.setBackground(getDrawable(R.drawable.style_buttons_not_pass_normal));
-                    textView.setText("X");
-                }
-                dialogBioNormalRestart.dismiss();
-                flag = true;
-                startActivity(intent);
+                resetLevels(LVL_BIO_NORMAL, numberOfLevel, R.drawable.style_buttons_not_pass_normal);
+                startLevel(ActivityBioNormal.class);
             }
+            dialogBioNormalRestart.dismiss();
         });
         BiolevelNormalRestartNo.setOnClickListener(view -> {
             dialogBioNormalRestart.dismiss();
@@ -364,46 +218,8 @@ public class ActivityBioNormal extends AppCompatActivity {
             else {
                 decided.setText(String.valueOf(level-1));
             }
-            errors.setText(String.valueOf(save1.getInt("BioLevelFalseNormal", 0)));
+            errors.setText(getAllErrorForLevel(LVL_BIO_NORMAL));
         });
 
-    }
-
-
-    @Override
-    public void overridePendingTransition(int enterAnim, int exitAnim) {
-        super.overridePendingTransition(enterAnim, exitAnim);
-    }
-    @Override
-    protected void onResume() {
-        super.onResume();
-        ///////////////////////////////////////////
-        //работа с музыкой
-        SharedPreferences saveAAA = getSharedPreferences("AAA", MODE_PRIVATE);
-        if (saveAAA.getInt("AAA", 1) == 0) {
-        } else {
-            startService(new Intent(this, MyService.class));
-        }
-        ///////////////////////////////////////////
-    }
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (flag == false) {
-            stopService(new Intent(this, MyService.class));
-        }
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (backPressedTime + 2000 > System.currentTimeMillis()) {
-            backToast.cancel();
-            super.onBackPressed();
-            return;
-        } else {
-            backToast = Toast.makeText(getBaseContext(), "Нажмите еще раз, чтобы выйти", Toast.LENGTH_SHORT);
-            backToast.show();
-        }
-        backPressedTime = System.currentTimeMillis();
     }
 }

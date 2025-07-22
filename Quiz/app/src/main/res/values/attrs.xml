@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="answer1" format="string|reference"/>
+    <attr name="answer2" format="string|reference"/>
+    <attr name="answer3" format="string|reference"/>
+    <attr name="buttonsColor" format="reference"/>
+
+    <declare-styleable name="ViewAnswers">
+        <attr name="answer1" />
+        <attr name="answer2" />
+        <attr name="answer3"/>
+        <attr name="answer4" format="string|reference"/>
+        <attr name="buttonsColor"/>
+    </declare-styleable>
+
+
+
+</resources>

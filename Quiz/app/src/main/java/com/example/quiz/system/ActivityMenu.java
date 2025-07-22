@@ -1,12 +1,22 @@
 package com.example.quiz.system;
 
+import static com.example.quiz.Const.LVL_BIO_EASY;
+import static com.example.quiz.Const.LVL_BIO_HARD;
+import static com.example.quiz.Const.LVL_BIO_NORMAL;
+import static com.example.quiz.Const.LVL_GEO_EASY;
+import static com.example.quiz.Const.LVL_GEO_HARD;
+import static com.example.quiz.Const.LVL_GEO_NORMAL;
+import static com.example.quiz.Const.LVL_MATH_EASY;
+import static com.example.quiz.Const.LVL_MATH_HARD;
+import static com.example.quiz.Const.LVL_MATH_NORMAL;
+import static com.example.quiz.Const.LVL_PH_EASY;
+import static com.example.quiz.Const.LVL_PH_HARD;
+import static com.example.quiz.Const.LVL_PH_NORMAL;
+
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -14,6 +24,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -23,14 +34,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.quiz.R;
+import com.example.quiz.ui.activity.BaseActivity;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class ActivityMenu extends AppCompatActivity {
+public class ActivityMenu extends BaseActivity {
     private Animation animationEasy, animationNormal, animationHard;
-    private long backPressedTime;
-    private Toast backToast;
     private ImageView imageCloud1, imageCloud2;
     private TextView imageBackActMenu;
     private Button buttonMathematics, buttonGeography, buttonPhysics, buttonBiology;
@@ -43,7 +53,6 @@ public class ActivityMenu extends AppCompatActivity {
     private int countGeo = 0;
     private int countPh = 0;
     private int countBio = 0;
-    private boolean flag;
 
 
     @SuppressLint("ClickableViewAccessibility")
@@ -57,8 +66,6 @@ public class ActivityMenu extends AppCompatActivity {
         progressBarGeo = findViewById(R.id.progressBar2);
         progressBarBio = findViewById(R.id.progressBar4);
         progressBarPh = findViewById(R.id.progressBar3);
-        //Установка нулевой анимации:
-        overridePendingTransition(0, 0);
         //Диалоговое окно при нажатии на кнопку "математика":
         dialogMath = new Dialog(this);
         dialogMath.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -109,32 +116,11 @@ public class ActivityMenu extends AppCompatActivity {
         bioLevelEasy = dialogBio.findViewById(R.id.BiolevelEasy);
         bioLevelNormal = dialogBio.findViewById(R.id.BiolevelNormal);
         bioLevelHard = dialogBio.findViewById(R.id.BiolevelHard);
-        flag = false;
         //Установка таймера:
         timer = new Timer();
-        SharedPreferences saveMath = getSharedPreferences("Save", MODE_PRIVATE);
-        SharedPreferences saveMath1 = getSharedPreferences("SaveNormal", MODE_PRIVATE);
-        SharedPreferences saveMath2 = getSharedPreferences("SaveHard", MODE_PRIVATE);
-        setProgress(saveMath.getInt("Level", 1), saveMath1.getInt("LevelNormal", 1), saveMath2.getInt("LevelHard", 1), countMath, progressBarMath);
-        SharedPreferences saveGeo = getSharedPreferences("GeoSave", MODE_PRIVATE);
-        SharedPreferences saveGeo1 = getSharedPreferences("GeoSaveNormal", MODE_PRIVATE);
-        SharedPreferences saveGeo2 = getSharedPreferences("GeoSaveHard", MODE_PRIVATE);
-        setProgress (saveGeo.getInt("GeoLevel", 1), saveGeo1.getInt("GeoLevelNormal", 1), saveGeo2.getInt("GeoLevelHard", 1), countGeo, progressBarGeo);
-        SharedPreferences savePh = getSharedPreferences("PhSave", MODE_PRIVATE);
-        SharedPreferences savePh1 = getSharedPreferences("PhSaveNormal", MODE_PRIVATE);
-        SharedPreferences savePh2 = getSharedPreferences("PhSaveHard", MODE_PRIVATE);
-        setProgress (savePh.getInt("PhLevel", 1), savePh1.getInt("PhLevelNormal", 1), savePh2.getInt("PhLevelHard", 1), countPh, progressBarPh);
-        SharedPreferences saveBio = getSharedPreferences("BioSave", MODE_PRIVATE);
-        SharedPreferences saveBio1 = getSharedPreferences("BioSaveNormal", MODE_PRIVATE);
-        SharedPreferences saveBio2 = getSharedPreferences("BioSaveHard", MODE_PRIVATE);
-        setProgress (saveBio.getInt("BioLevel", 1), saveBio1.getInt("BioLevelNormal", 1), saveBio2.getInt("BioLevelHard", 1), countBio, progressBarBio);
-
-
 
         imageBackActMenu.setOnClickListener(view -> {
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-            flag = true;
+            startLevel(MainActivity.class);
         });
         buttonMathematics.setOnTouchListener((view, motionEvent) -> {
             if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
@@ -246,96 +232,54 @@ public class ActivityMenu extends AppCompatActivity {
         });
 
         mathlevelEasy.setOnClickListener(view -> {
-            Intent intent = new Intent(ActivityMenu.this, ActivityMathematicsEasy.class);
-            startActivity(intent);
+            startLevel(ActivityMathematicsEasy.class);
             dialogMath.dismiss();
-            flag = true;
         });
         mathlevelNormal.setOnClickListener(view -> {
-            Intent intent = new Intent(ActivityMenu.this, ActivityMathematicsNormal.class);
-            startActivity(intent);
+            startLevel(ActivityMathematicsNormal.class);
             dialogMath.dismiss();
-            flag = true;
         });
         mathlevelHard.setOnClickListener(view -> {
-            Intent intent = new Intent(ActivityMenu.this, ActivityMathematicsHard.class);
-            startActivity(intent);
+            startLevel(ActivityMathematicsHard.class);
             dialogMath.dismiss();
-            flag = true;
         });
         geoLevelEasy.setOnClickListener(view -> {
-            Intent intent = new Intent(ActivityMenu.this, ActivityGeoEasy.class);
-            startActivity(intent);
-            dialogGeo.dismiss();
-            flag = true;
+            startLevel(ActivityGeoEasy.class);
+            dialogMath.dismiss();
         });
         geoLevelNormal.setOnClickListener(view -> {
-            Intent intent = new Intent(ActivityMenu.this, ActivityGeoNormal.class);
-            startActivity(intent);
-            dialogGeo.dismiss();
-            flag = true;
+            startLevel(ActivityGeoNormal.class);
+            dialogMath.dismiss();
         });
         geoLevelHard.setOnClickListener(view -> {
-            Intent intent = new Intent(ActivityMenu.this, ActivityGeoHard.class);
-            startActivity(intent);
-            dialogGeo.dismiss();
-            flag = true;
+            startLevel(ActivityGeoHard.class);
+            dialogMath.dismiss();
         });
         phLevelEasy.setOnClickListener(view -> {
-            Intent intent = new Intent(ActivityMenu.this, ActivityPhEasy.class);
-            startActivity(intent);
-            dialogPh.dismiss();
-            flag = true;
+            startLevel(ActivityPhEasy.class);
+            dialogMath.dismiss();
         });
         phLevelNormal.setOnClickListener(view -> {
-            Intent intent = new Intent(ActivityMenu.this, ActivityPhNormal.class);
-            startActivity(intent);
-            dialogPh.dismiss();
-            flag = true;
+            startLevel(ActivityPhNormal.class);
+            dialogMath.dismiss();
         });
         phLevelHard.setOnClickListener(view -> {
-            Intent intent = new Intent(ActivityMenu.this, ActivityPhHard.class);
-            startActivity(intent);
-            dialogPh.dismiss();
-            flag = true;
+            startLevel(ActivityPhHard.class);
+            dialogMath.dismiss();
         });
         bioLevelEasy.setOnClickListener(view -> {
-            Intent intent = new Intent(ActivityMenu.this, ActivityBioEasy.class);
-            startActivity(intent);
-            dialogBio.dismiss();
-            flag = true;
+            startLevel(ActivityBioEasy.class);
+            dialogMath.dismiss();
         });
         bioLevelNormal.setOnClickListener(view -> {
-            Intent intent = new Intent(ActivityMenu.this, ActivityBioNormal.class);
-            startActivity(intent);
-            dialogBio.dismiss();
-            flag = true;
+            startLevel(ActivityBioNormal.class);
+            dialogMath.dismiss();
         });
         bioLevelHard.setOnClickListener(view -> {
-            Intent intent = new Intent(ActivityMenu.this, ActivityBioHard.class);
-            startActivity(intent);
-            dialogBio.dismiss();
-            flag = true;
+            startLevel(ActivityBioHard.class);
+            dialogMath.dismiss();
         });
 
-
-    }
-    @Override
-    public void overridePendingTransition(int enterAnim, int exitAnim) {
-        super.overridePendingTransition(enterAnim, exitAnim);
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (backPressedTime + 2000 > System.currentTimeMillis()) {
-            backToast.cancel();
-            super.onBackPressed();
-            return;
-        } else {
-            backToast = Toast.makeText(getBaseContext(), "Нажмите еще раз, чтобы выйти", Toast.LENGTH_SHORT);
-            backToast.show();
-        }
-        backPressedTime = System.currentTimeMillis();
     }
 
     @SuppressLint("UseCompatLoadingForDrawables")
@@ -344,49 +288,17 @@ public class ActivityMenu extends AppCompatActivity {
         super.onResume();
         imageCloud1.startAnimation(animationCloud1);
         imageCloud2.startAnimation(animationCloud2);
-        SharedPreferences saveMath = getSharedPreferences("Save", MODE_PRIVATE);
-        SharedPreferences saveMath1 = getSharedPreferences("SaveNormal", MODE_PRIVATE);
-        SharedPreferences saveMath2 = getSharedPreferences("SaveHard", MODE_PRIVATE);
-        setProgress(saveMath.getInt("Level", 1), saveMath1.getInt("LevelNormal", 1), saveMath2.getInt("LevelHard", 1), countMath, progressBarMath);
-        SharedPreferences saveGeo = getSharedPreferences("GeoSave", MODE_PRIVATE);
-        SharedPreferences saveGeo1 = getSharedPreferences("GeoSaveNormal", MODE_PRIVATE);
-        SharedPreferences saveGeo2 = getSharedPreferences("GeoSaveHard", MODE_PRIVATE);
-        setProgress (saveGeo.getInt("GeoLevel", 1), saveGeo1.getInt("GeoLevelNormal", 1), saveGeo2.getInt("GeoLevelHard", 1), countGeo, progressBarGeo);
-        SharedPreferences savePh = getSharedPreferences("PhSave", MODE_PRIVATE);
-        SharedPreferences savePh1 = getSharedPreferences("PhSaveNormal", MODE_PRIVATE);
-        SharedPreferences savePh2 = getSharedPreferences("PhSaveHard", MODE_PRIVATE);
-        setProgress (savePh.getInt("PhLevel", 1), savePh1.getInt("PhLevelNormal", 1), savePh2.getInt("PhLevelHard", 1), countPh, progressBarPh);
-        SharedPreferences saveBio = getSharedPreferences("BioSave", MODE_PRIVATE);
-        SharedPreferences saveBio1 = getSharedPreferences("BioSaveNormal", MODE_PRIVATE);
-        SharedPreferences saveBio2 = getSharedPreferences("BioSaveHard", MODE_PRIVATE);
-        setProgress (saveBio.getInt("BioLevel", 1), saveBio1.getInt("BioLevelNormal", 1), saveBio2.getInt("BioLevelHard", 1), countBio, progressBarBio);
-
-        ///////////////////////////////////////////
-        //работа с музыкой
-        SharedPreferences saveAAA = getSharedPreferences("AAA", MODE_PRIVATE);
-        if (saveAAA.getInt("AAA", 1) == 0) {
-        } else {
-            startService(new Intent(this, MyService.class));
-        }
-        ///////////////////////////////////////////
+        setProgress(getSp().getInt(LVL_BIO_EASY, 1), getSp().getInt(LVL_BIO_NORMAL, 1), getSp().getInt(LVL_BIO_HARD, 1), countBio, progressBarBio);
+        setProgress (getSp().getInt(LVL_GEO_EASY, 1), getSp().getInt(LVL_GEO_NORMAL, 1), getSp().getInt(LVL_GEO_HARD, 1), countGeo, progressBarGeo);
+        setProgress (getSp().getInt(LVL_MATH_EASY, 1), getSp().getInt(LVL_MATH_NORMAL, 1), getSp().getInt(LVL_MATH_HARD, 1), countMath, progressBarMath);
+        setProgress (getSp().getInt(LVL_PH_EASY, 1), getSp().getInt(LVL_PH_NORMAL, 1), getSp().getInt(LVL_PH_HARD, 1), countPh, progressBarPh);
     }
 
     public void setProgress( int level, int level1, int level2, int count, ProgressBar bar) {
-        if (level != 1) {
-            for (int i = 1; i <= level; i++) {
-                count++;
-            }
-        }
-        if (level1 != 1) {
-            for (int i = 1; i <= level1; i++) {
-                count++;
-            }
-        }
-        if (level2 != 1) {
-            for (int i = 1; i <= level2; i++) {
-                count++;
-            }
-        }
+        if (level != 1) count+=level;
+        if (level1 != 1) count += level1;
+        if (level2 != 1) count +=level2;
+
         bar.setProgress(count);
 
         if (bar.getProgress() == 60) {
@@ -418,13 +330,5 @@ public class ActivityMenu extends AppCompatActivity {
         bioLevelNormal.startAnimation(animationNormal);
         bioLevelHard.startAnimation(animationHard);
     }
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (flag == false) {
-            stopService(new Intent(this, MyService.class));
-        }
-    }
-
 
 }
